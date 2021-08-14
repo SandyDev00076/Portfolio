@@ -6,3 +6,5 @@ const Home = () => {
         Home component
     </section>
 }
+
+export default Home;

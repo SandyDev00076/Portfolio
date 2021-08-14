@@ -6,3 +6,5 @@ const Portfolio = () => {
         Portfolio component
     </section>
 }
+
+export default Portfolio;
