@@ -1,0 +1,33 @@
+$btn-hov-disp: 5px;
+
+.container {
+  position: relative;
+  width: max-content;
+
+  div {
+    position: absolute;
+    inset: $btn-hov-disp (-$btn-hov-disp) (-$btn-hov-disp) $btn-hov-disp;
+    background-color: var(--primary);
+    z-index: 0;
+    transition: all 0.8s;
+  }
+}
+
+.btn {
+  position: relative;
+  padding: 8px 16px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--text);
+  background: transparent;
+  border: 2px solid var(--text);
+  font-size: 1rem;
+  cursor: pointer;
+  z-index: 1;
+
+  &:hover {
+    & + div {
+      inset: 0;
+    }
+  }
+}

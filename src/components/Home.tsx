@@ -1,7 +1,12 @@
+import Button from "atoms/Button";
 import React from "react";
 import styles from "./Home.module.scss";
 
 const Home = () => {
+  function explore() {
+    console.log("clicked explore");
+  }
+
   return (
     <section className={styles.container}>
       <section className={styles.intro}>
@@ -10,6 +15,7 @@ const Home = () => {
           <h2>UI/UX Designer</h2>
           <h2>UI Developer</h2>
         </div>
+        <Button onClick={explore}>Explore</Button>
       </section>
     </section>
   );
