@@ -2,8 +2,12 @@ import Button from "atoms/Button";
 import React from "react";
 import styles from "./Home.module.scss";
 
-const Home = () => {
+interface Props {
+  showHome: React.Dispatch<React.SetStateAction<boolean>>;
+}
+const Home = ({ showHome }: Props) => {
   function explore() {
+    showHome(false);
     console.log("clicked explore");
   }
 

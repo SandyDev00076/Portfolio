@@ -1,10 +1,12 @@
-import React from 'react';
-import styles from './Portfolio.module.scss';
+import React from "react";
+import AboutMe from "./AboutMe";
 
 const Portfolio = () => {
-    return <section>
-        Portfolio component
+  return (
+    <section>
+      <AboutMe />
     </section>
-}
+  );
+};
 
 export default Portfolio;
