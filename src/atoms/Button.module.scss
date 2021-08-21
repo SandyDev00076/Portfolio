@@ -9,7 +9,7 @@ $btn-hov-disp: 5px;
     inset: $btn-hov-disp (-$btn-hov-disp) (-$btn-hov-disp) $btn-hov-disp;
     background-color: var(--primary);
     z-index: 0;
-    transition: all 0.8s;
+    transition: all 0.5s;
   }
 }
 
