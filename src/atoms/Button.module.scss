@@ -24,6 +24,7 @@ $btn-hov-disp: 5px;
   font-size: 1rem;
   cursor: pointer;
   z-index: 1;
+  user-select: none;
 
   &:hover {
     & + div {
