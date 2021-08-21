@@ -22,3 +22,39 @@
     font-weight: 600;
   }
 }
+
+.links {
+  position: absolute;
+  bottom: 60px;
+  left: 80px;
+
+  display: grid;
+  grid-template-columns: repeat(4, 50px);
+
+  & svg {
+    height: 26px;
+    width: auto;
+    opacity: 0.5;
+    transition: opacity 0.2s;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  & > a:nth-of-type(1) > svg {
+    fill: var(--behance);
+  }
+
+  & > a:nth-of-type(2) > svg {
+    fill: var(--pinterest);
+  }
+
+  & > a:nth-of-type(3) > svg {
+    fill: var(--linkedin);
+  }
+
+  & > a:nth-of-type(4) > svg {
+    fill: var(--github);
+  }
+}

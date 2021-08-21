@@ -1,5 +1,18 @@
-import Button from "atoms/Button";
 import React from "react";
+import Button from "atoms/Button";
+import {
+  BehanceIcon,
+  GithubIcon,
+  LinkedInIcon,
+  PinterestIcon,
+} from "assets/icons";
+import {
+  BEHANCE_URL,
+  GITHUB_URL,
+  LINKEDIN_URL,
+  PINTEREST_URL,
+} from "../constants";
+
 import styles from "./Home.module.scss";
 
 interface Props {
@@ -20,6 +33,20 @@ const Home = ({ showHome }: Props) => {
           <h2>UI Developer</h2>
         </div>
         <Button onClick={explore}>Explore</Button>
+      </section>
+      <section className={styles.links}>
+        <a href={BEHANCE_URL} target="_blank" rel="noopener noreferrer">
+          <BehanceIcon />
+        </a>
+        <a href={PINTEREST_URL} target="_blank" rel="noopener noreferrer">
+          <PinterestIcon />
+        </a>
+        <a href={LINKEDIN_URL} target="_blank" rel="noopener noreferrer">
+          <LinkedInIcon />
+        </a>
+        <a href={GITHUB_URL} target="_blank" rel="noopener noreferrer">
+          <GithubIcon />
+        </a>
       </section>
     </section>
   );
