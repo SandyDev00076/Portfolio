@@ -7,8 +7,27 @@
   & h1 {
     font-size: 1.2rem;
   }
+}
 
-  & div {
-    text-align: center;
+.icons {
+  display: flex;
+  align-items: center;
+  & svg {
+    fill: var(--primary-dark);
   }
+
+  & svg:first-of-type {
+    height: 40px;
+    width: auto;
+  }
+
+  & svg:last-of-type {
+    height: 24px;
+    width: auto;
+    margin-top: 6px;
+  }
+}
+
+.line {
+  text-align: center;
 }

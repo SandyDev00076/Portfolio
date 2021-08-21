@@ -1,6 +1,15 @@
 import React from "react";
-import styles from "./AboutMe.module.scss";
+import {
+  LaptopIcon,
+  PhoneIcon,
+  WebIcon,
+  PublicIcon,
+  BrushIcon,
+  ArchIcon,
+} from "assets/icons";
 import KeyPoint from "./KeyPoint";
+
+import styles from "./AboutMe.module.scss";
 
 const AboutMe = () => {
   return (
@@ -10,9 +19,18 @@ const AboutMe = () => {
         <KeyPoint
           title="Hybrid Apps"
           line="Created hybrid apps using Ionic & cordova"
+          icons={[<LaptopIcon />, <PhoneIcon />]}
         />
-        <KeyPoint title="Web apps" line="Created responsive web sites, PWAs." />
-        <KeyPoint title="Design Ideas" line="Created designs using Figma." />
+        <KeyPoint
+          title="Web apps"
+          line="Created responsive web sites, PWAs."
+          icons={[<WebIcon />, <PublicIcon />]}
+        />
+        <KeyPoint
+          title="Design Ideas"
+          line="Created designs using Figma."
+          icons={[<ArchIcon />, <BrushIcon />]}
+        />
       </div>
       <p>
         started out as a <strong>UI developer</strong>,
