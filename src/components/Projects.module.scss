@@ -1,15 +1,14 @@
 .container {
-}
-
-.container > h1 {
-  font-size: 160px;
-  text-transform: uppercase;
-  color: var(--text-light-2);
-  -webkit-text-fill-color: var(
-    --white
-  ); /* Will override color (regardless of order) */
-  -webkit-text-stroke-width: 3px;
-  -webkit-text-stroke-color: var(--text-light-2);
+  & > h1 {
+    font-size: 120px;
+    text-transform: uppercase;
+    color: var(--text-light-2);
+    -webkit-text-fill-color: var(
+      --white
+    ); /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--text-light-2);
+  }
 }
 
 .projects {

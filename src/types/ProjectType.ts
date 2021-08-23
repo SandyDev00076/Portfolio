@@ -3,4 +3,5 @@ export interface ProjectType {
   subtitle: string;
   about: string;
   imageURL: string;
+  link: string;
 }

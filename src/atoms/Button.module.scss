@@ -15,7 +15,7 @@ $btn-hov-disp: 5px;
 
 .btn {
   position: relative;
-  padding: 8px 16px;
+  padding: 8px 24px;
   text-transform: uppercase;
   font-weight: 600;
   color: var(--text);
@@ -31,4 +31,8 @@ $btn-hov-disp: 5px;
       inset: 0;
     }
   }
+}
+
+.small {
+  font-size: 0.8rem;
 }

@@ -1,10 +1,15 @@
 import React, { useRef } from "react";
 import styles from "./Button.module.scss";
 
-interface Props extends React.ButtonHTMLAttributes<HTMLButtonElement> {}
+interface Props extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+  small?: boolean;
+}
 
-const Button = ({ children, onClick, ...props }: Props) => {
+const Button = ({ children, onClick, small = false, ...props }: Props) => {
   const containerRef = useRef<HTMLDivElement>(null);
+
+  let btnStyle = `${styles.btn}`;
+  if (small) btnStyle += ` ${styles.small}`;
 
   function animateContainer() {
     // TODO: put some container animation here
@@ -22,7 +27,7 @@ const Button = ({ children, onClick, ...props }: Props) => {
           preClick();
           if (onClick !== undefined) onClick(e);
         }}
-        className={styles.btn}
+        className={btnStyle}
       >
         {children}
       </button>

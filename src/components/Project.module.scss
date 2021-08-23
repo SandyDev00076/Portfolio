@@ -1,17 +1,21 @@
+@use '../styles/shared';
+
 .container {
   display: flex;
   align-items: center;
   margin-bottom: 64px;
 
   & > img {
-    height: 400px;
+    height: 360px;
     width: auto;
+    @extend %picShadow;
+    border-radius: 10px;
   }
 }
 
 .proDetails {
-  width: 450px;
-  margin-right: 32px;
+  width: 400px;
+  margin-right: 64px;
 
   & > h1 {
     font-size: 2rem;
@@ -23,6 +27,10 @@
     font-size: 1.2rem;
     font-weight: 400;
     color: var(--text-light-1);
-    margin-bottom: 8px;
+    margin-bottom: 16px;
+  }
+
+  & > p {
+    margin-bottom: 32px;
   }
 }
