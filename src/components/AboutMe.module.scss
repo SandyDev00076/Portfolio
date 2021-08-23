@@ -8,7 +8,7 @@
   font-size: 1.2rem;
   color: var(--text-light-1);
   line-height: 1.8;
-  margin-bottom: 32px;
+  margin-bottom: 64px;
 }
 
 .image {
@@ -16,12 +16,12 @@
   width: 200px;
   border-radius: 100px;
   background-color: grey;
-  margin-bottom: 32px;
+  margin: 64px 0;
 }
 
 .keyPoints {
   display: grid;
   grid-template-columns: repeat(3, 220px);
   gap: 48px;
-  margin-bottom: 32px;
+  margin-bottom: 64px;
 }
