@@ -1,14 +1,9 @@
 import React from "react";
+import { ProjectType } from "types/ProjectType";
 
 import styles from "./Project.module.scss";
 
-interface Props {
-  title: string;
-  subtitle: string;
-  about: string;
-  imageURL: string;
-}
-const Project = ({ title, subtitle, about, imageURL }: Props) => {
+const Project = ({ title, subtitle, about, imageURL }: ProjectType) => {
   return (
     <section className={styles.container}>
       <div className={styles.proDetails}>

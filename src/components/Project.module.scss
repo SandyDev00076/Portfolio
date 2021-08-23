@@ -1,4 +1,28 @@
 .container {
   display: flex;
   align-items: center;
+  margin-bottom: 64px;
+
+  & > img {
+    height: 400px;
+    width: auto;
+  }
+}
+
+.proDetails {
+  width: 450px;
+  margin-right: 32px;
+
+  & > h1 {
+    font-size: 2rem;
+    color: var(--text);
+    font-weight: 600;
+  }
+
+  & > h2 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--text-light-1);
+    margin-bottom: 8px;
+  }
 }
