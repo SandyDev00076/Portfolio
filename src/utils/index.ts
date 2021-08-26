@@ -1,4 +1,5 @@
-import { OtherProject } from "types/OtherProjectType";
+import { GigType } from "types/GigType";
+import { OtherProjectType } from "types/OtherProjectType";
 import { ProjectType } from "types/ProjectType";
 
 export function createProject(
@@ -21,10 +22,24 @@ export function createOtherProject(
   title: string,
   image: string,
   link: string
-): OtherProject {
+): OtherProjectType {
   return {
     title,
     image,
     link,
+  };
+}
+
+export function createGig(
+  name: string,
+  role: string,
+  duration: string,
+  contri: string
+): GigType {
+  return {
+    name,
+    role,
+    duration,
+    contri,
   };
 }

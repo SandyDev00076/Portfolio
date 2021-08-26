@@ -1,5 +1,6 @@
 import React from "react";
 import AboutMe from "./AboutMe";
+import Journey from "./Journey";
 import Projects from "./Projects";
 
 const Portfolio = () => {
@@ -7,6 +8,7 @@ const Portfolio = () => {
     <section>
       <AboutMe />
       <Projects />
+      <Journey />
     </section>
   );
 };

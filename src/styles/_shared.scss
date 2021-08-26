@@ -7,3 +7,16 @@
 %lane {
   padding: 0 28%;
 }
+
+%heading {
+  display: block;
+  margin-bottom: 80px;
+  font-size: 110px;
+  text-transform: uppercase;
+  color: var(--text-light-2);
+  -webkit-text-fill-color: var(
+    --white
+  ); /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: var(--text-light-2);
+}

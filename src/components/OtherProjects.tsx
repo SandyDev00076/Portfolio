@@ -1,5 +1,5 @@
 import React from "react";
-import { OtherProject } from "types/OtherProjectType";
+import { OtherProjectType } from "types/OtherProjectType";
 import { createOtherProject } from "utils";
 import {
   ESSENCE_IMG_URL,
@@ -14,7 +14,7 @@ import {
 
 import styles from "./OtherProjects.module.scss";
 
-const otherProjects: OtherProject[] = [
+const otherProjects: OtherProjectType[] = [
   createOtherProject("Programme", PROGRAMME_IMG_URL, PROGRAMME_URL),
   createOtherProject("Variance", VARIANCE_IMG_URL, VARIANCE_URL),
   createOtherProject("Essence", ESSENCE_IMG_URL, ESSENCE_URL),

@@ -3,9 +3,11 @@
 .container {
   & > h1 {
     @extend %heading;
+    text-align: right;
+    margin-bottom: 96px;
   }
 }
 
-.projects {
+.gigs {
   @extend %lane;
 }
