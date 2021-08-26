@@ -3,7 +3,8 @@
 .container {
   display: flex;
   align-items: center;
-  margin-bottom: 64px;
+  justify-content: space-between;
+  margin-bottom: 80px;
 
   & > img {
     height: 360px;

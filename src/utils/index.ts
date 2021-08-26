@@ -1,3 +1,4 @@
+import { OtherProject } from "types/OtherProjectType";
 import { ProjectType } from "types/ProjectType";
 
 export function createProject(
@@ -12,6 +13,18 @@ export function createProject(
     subtitle,
     about,
     imageURL,
+    link,
+  };
+}
+
+export function createOtherProject(
+  title: string,
+  image: string,
+  link: string
+): OtherProject {
+  return {
+    title,
+    image,
     link,
   };
 }

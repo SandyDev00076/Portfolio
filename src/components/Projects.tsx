@@ -2,6 +2,7 @@ import React from "react";
 import { ProjectType } from "types/ProjectType";
 import { createProject } from "utils";
 import { AIM_IMG_URL, AIM_URL, BINDER_URL, ORDERLY_URL } from "../constants";
+import OtherProjects from "./OtherProjects";
 import Project from "./Project";
 
 import styles from "./Projects.module.scss";
@@ -38,6 +39,7 @@ const Projects = () => {
         {projects.map((project) => (
           <Project {...project} />
         ))}
+        <OtherProjects />
       </div>
     </section>
   );
