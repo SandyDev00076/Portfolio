@@ -23,3 +23,5 @@ export const VARIANCE_URL =
 export const ESSENCE_URL = "https://www.behance.net/gallery/112478781/Essence";
 export const GOODCOLORS_URL =
   "https://www.behance.net/gallery/111635241/GoodColors";
+
+export const mailID = "sanjeettiwari00076@gmail.com";
