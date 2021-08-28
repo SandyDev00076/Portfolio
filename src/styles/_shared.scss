@@ -10,7 +10,7 @@
 
 %heading {
   display: block;
-  margin-bottom: 80px;
+  margin-bottom: 96px;
   font-size: 110px;
   text-transform: uppercase;
   color: var(--text-light-2);
@@ -19,4 +19,5 @@
   ); /* Will override color (regardless of order) */
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: var(--text-light-2);
+  user-select: none;
 }

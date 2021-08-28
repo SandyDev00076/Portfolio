@@ -2,8 +2,12 @@ import React from "react";
 import { OtherProjectType } from "types/OtherProjectType";
 import { createOtherProject } from "utils";
 import {
+  CLIPBOARD_IMG_URL,
+  CLIPBOARD_URL,
   ESSENCE_IMG_URL,
   ESSENCE_URL,
+  GLASSPASS_IMG_URL,
+  GLASSPASS_URL,
   GOODCOLORS_IMG_URL,
   GOODCOLORS_URL,
   PROGRAMME_IMG_URL,
@@ -19,6 +23,8 @@ const otherProjects: OtherProjectType[] = [
   createOtherProject("Variance", VARIANCE_IMG_URL, VARIANCE_URL),
   createOtherProject("Essence", ESSENCE_IMG_URL, ESSENCE_URL),
   createOtherProject("Good Colors", GOODCOLORS_IMG_URL, GOODCOLORS_URL),
+  createOtherProject("Glass Pass", GLASSPASS_IMG_URL, GLASSPASS_URL),
+  createOtherProject("Clipboard", CLIPBOARD_IMG_URL, CLIPBOARD_URL),
 ];
 
 const OtherProjects = () => {

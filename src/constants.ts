@@ -10,6 +10,8 @@ export const PROGRAMME_IMG_URL = "programme.jpg";
 export const VARIANCE_IMG_URL = "programme.jpg";
 export const ESSENCE_IMG_URL = "programme.jpg";
 export const GOODCOLORS_IMG_URL = "programme.jpg";
+export const GLASSPASS_IMG_URL = "programme.jpg";
+export const CLIPBOARD_IMG_URL = "programme.jpg";
 
 export const AIM_URL =
   "https://www.behance.net/gallery/124110019/Aim-Idea-management-app";
@@ -23,5 +25,8 @@ export const VARIANCE_URL =
 export const ESSENCE_URL = "https://www.behance.net/gallery/112478781/Essence";
 export const GOODCOLORS_URL =
   "https://www.behance.net/gallery/111635241/GoodColors";
+export const GLASSPASS_URL =
+  "https://www.behance.net/gallery/111634873/GlassPass";
+export const CLIPBOARD_URL = "https://www.my-clipboard.co.in/";
 
-export const mailID = "sanjeettiwari00076@gmail.com";
+export const MAILID = "sanjeettiwari00076@gmail.com";
