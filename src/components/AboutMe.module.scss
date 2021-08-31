@@ -1,27 +1,62 @@
+@use '../styles/shared';
+
 .container {
+  @extend %lane;
+  min-height: 100vh;
+
+  & > h1 {
+    font-size: 4rem;
+    font-weight: 600;
+    margin: 96px 0;
+    color: var(--text);
+  }
+}
+
+.card {
+  padding: 32px;
+  border-radius: 10px;
+  color: var(--text);
+  margin-bottom: 96px;
+  background: linear-gradient(
+    to bottom right,
+    hsla(0, 0%, 95%, 60%),
+    hsla(0, 0%, 95%, 10%)
+  );
+  border: 2px solid var(--white);
+  position: relative;
+  backdrop-filter: blur(20px);
+
+  & > p {
+    max-width: 70%;
+    margin-bottom: 32px;
+    font-size: 1.2rem;
+    & > strong {
+      font-weight: 600;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -60px;
+    right: 32px;
+    width: 120px;
+    height: 120px;
+    border-radius: 60px;
+    background: url(../assets/images/selfPic.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+.location {
   display: flex;
-  flex-direction: column;
   align-items: center;
-}
+  font-size: 1rem;
+  color: var(--text);
 
-.container p {
-  font-size: 1.2rem;
-  color: var(--text-light-1);
-  line-height: 1.8;
-  margin-bottom: 96px;
-}
-
-.image {
-  height: 200px;
-  width: 200px;
-  border-radius: 100px;
-  background-color: grey;
-  margin: 96px 0;
-}
-
-.keyPoints {
-  display: grid;
-  grid-template-columns: repeat(3, 200px);
-  gap: 48px;
-  margin-bottom: 96px;
+  & > svg {
+    fill: var(--text-light-1);
+    margin-right: 8px;
+  }
 }

@@ -24,6 +24,9 @@ import { ReactComponent as PhoneIcon } from "./phone.svg";
 import { ReactComponent as PublicIcon } from "./public.svg";
 import { ReactComponent as WebIcon } from "./web.svg";
 
+// Misc Icons
+import { ReactComponent as MapIcon } from "./map.svg";
+
 export {
   AngularIcon,
   FigmaIcon,
@@ -41,4 +44,5 @@ export {
   PhoneIcon,
   PublicIcon,
   WebIcon,
+  MapIcon,
 };
