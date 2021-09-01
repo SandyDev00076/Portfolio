@@ -21,3 +21,15 @@
   -webkit-text-stroke-color: var(--text-light-2);
   user-select: none;
 }
+
+%glassmorph {
+  padding: 32px;
+  border-radius: 10px;
+  background: linear-gradient(
+    to bottom right,
+    hsla(0, 0%, 95%, 60%),
+    hsla(0, 0%, 95%, 10%)
+  );
+  border: 2px solid var(--white);
+  backdrop-filter: blur(20px);
+}

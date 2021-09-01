@@ -26,6 +26,7 @@ import { ReactComponent as WebIcon } from "./web.svg";
 
 // Misc Icons
 import { ReactComponent as MapIcon } from "./map.svg";
+import { ReactComponent as CodeIcon } from "./code.svg";
 
 export {
   AngularIcon,
@@ -45,4 +46,5 @@ export {
   PublicIcon,
   WebIcon,
   MapIcon,
+  CodeIcon,
 };
