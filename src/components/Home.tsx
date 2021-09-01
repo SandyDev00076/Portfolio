@@ -1,10 +1,16 @@
 import React from "react";
 import Button from "atoms/Button";
 import {
+  AngularIcon,
   BehanceIcon,
+  FigmaIcon,
   GithubIcon,
   LinkedInIcon,
   PinterestIcon,
+  ReactIcon,
+  SvelteIcon,
+  VSCodeIcon,
+  VueIcon,
 } from "assets/icons";
 import {
   BEHANCE_URL,
@@ -48,6 +54,13 @@ const Home = ({ showHome }: Props) => {
           <GithubIcon />
         </a>
       </section>
+      <img src="skillsBg.png" alt="skills-bg" />
+      <ReactIcon className={styles.reactIcon} />
+      <VSCodeIcon className={styles.vsCodeIcon} />
+      <AngularIcon className={styles.angularIcon} />
+      <VueIcon className={styles.vueIcon} />
+      <FigmaIcon className={styles.figmaIcon} />
+      <SvelteIcon className={styles.svelteIcon} />
     </section>
   );
 };

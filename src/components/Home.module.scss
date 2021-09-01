@@ -3,6 +3,21 @@
   min-height: 100vh;
   display: flex;
   align-items: center;
+
+  & > img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 40%;
+  }
+
+  & > svg {
+    position: absolute;
+    fill: var(--white);
+    max-height: 500px;
+    width: auto;
+  }
 }
 
 .intro {
@@ -57,4 +72,40 @@
   & > a:nth-of-type(4) > svg {
     fill: var(--github);
   }
+}
+
+.reactIcon {
+  top: 4.43%;
+  right: 4%;
+  height: 180px;
+}
+
+.vsCodeIcon {
+  top: 24.94%;
+  right: 22%;
+  height: 100px;
+}
+
+.angularIcon {
+  top: 41.57%;
+  right: 4%;
+  height: 80px;
+}
+
+.vueIcon {
+  top: 58.2%;
+  right: 14%;
+  height: 60px;
+}
+
+.figmaIcon {
+  top: 69.29%;
+  right: 20%;
+  height: 120px;
+}
+
+.svelteIcon {
+  top: 83.14%;
+  right: 5%;
+  height: 60px;
 }
