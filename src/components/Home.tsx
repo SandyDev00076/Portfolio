@@ -54,7 +54,18 @@ const Home = ({ showHome }: Props) => {
           <GithubIcon />
         </a>
       </section>
-      <img src="skillsBg.png" alt="skills-bg" />
+      <svg
+        className={styles.skillsBg}
+        xmlns="http://www.w3.org/2000/svg"
+        xmlnsXlink="http://www.w3.org/1999/xlink"
+        viewBox="0 0 714 1024"
+        preserveAspectRatio="none"
+      >
+        <path
+          d=" M 65.435 0 L 714 0 L 714 1024 L 65.435 1024 C 205.301 545.5 -136.077 355.5 65.435 0 Z "
+          fill="rgb(254,205,205)"
+        />
+      </svg>
       <ReactIcon className={styles.reactIcon} />
       <VSCodeIcon className={styles.vsCodeIcon} />
       <AngularIcon className={styles.angularIcon} />
