@@ -13,7 +13,7 @@
   right: 0;
   height: 100vh;
   width: 0;
-  animation: skillsBgAnim 1.5s cubic-bezier(0.7, 0.46, 0.27, 0.8) 1 forwards;
+  animation: skillsBgAnim 1.5s ease-in-out 1 forwards;
 }
 
 .intro {

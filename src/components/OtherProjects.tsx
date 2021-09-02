@@ -1,5 +1,11 @@
 import React from "react";
-import { ProgrammeImg } from "assets/images";
+import {
+  EssenceImg,
+  GlassPassImg,
+  GoodColorsImg,
+  ProgrammeImg,
+  VarianceImg,
+} from "assets/images";
 import { OtherProjectType } from "types/OtherProjectType";
 import { createOtherProject } from "utils";
 import {
@@ -15,11 +21,11 @@ import styles from "./OtherProjects.module.scss";
 
 const otherProjects: OtherProjectType[] = [
   createOtherProject("Programme", ProgrammeImg, PROGRAMME_URL),
-  createOtherProject("Variance", ProgrammeImg, VARIANCE_URL),
-  createOtherProject("Essence", ProgrammeImg, ESSENCE_URL),
-  createOtherProject("Good Colors", ProgrammeImg, GOODCOLORS_URL),
-  createOtherProject("Glass Pass", ProgrammeImg, GLASSPASS_URL),
-  createOtherProject("Clipboard", ProgrammeImg, CLIPBOARD_URL),
+  createOtherProject("Variance", VarianceImg, VARIANCE_URL),
+  createOtherProject("Essence", EssenceImg, ESSENCE_URL),
+  createOtherProject("Good Colors", GoodColorsImg, GOODCOLORS_URL),
+  createOtherProject("Glass Pass", GlassPassImg, GLASSPASS_URL),
+  createOtherProject("Clipboard", GlassPassImg, CLIPBOARD_URL),
 ];
 
 const OtherProjects = () => {

@@ -1,6 +1,6 @@
 import React from "react";
 import { AimBlob, BinderBlob, OrderlyBlob } from "assets/blobs";
-import { AimImg } from "assets/images";
+import { AimImg, BinderImg, OrderlyImg } from "assets/images";
 import { ProjectType } from "types/ProjectType";
 import { createProject } from "utils";
 import { AIM_URL, BINDER_URL, ORDERLY_URL } from "../constants";
@@ -23,14 +23,14 @@ const projects: ProjectType[] = [
     "Orderly",
     "A timer sequence app",
     "This app lets you create a fully customizable sequence of timers according to your needs.",
-    AimImg,
+    OrderlyImg,
     ORDERLY_URL
   ),
   createProject(
     "Binder",
     "An almanac of your youtube vids",
     "Organize links of your favorite youtube videos in folders so that you can categorize them in any way you want to increase accessibility.",
-    AimImg,
+    BinderImg,
     BINDER_URL
   ),
 ];
