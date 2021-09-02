@@ -1,30 +1,25 @@
 import React from "react";
+import { ProgrammeImg } from "assets/images";
 import { OtherProjectType } from "types/OtherProjectType";
 import { createOtherProject } from "utils";
 import {
-  CLIPBOARD_IMG_URL,
   CLIPBOARD_URL,
-  ESSENCE_IMG_URL,
   ESSENCE_URL,
-  GLASSPASS_IMG_URL,
   GLASSPASS_URL,
-  GOODCOLORS_IMG_URL,
   GOODCOLORS_URL,
-  PROGRAMME_IMG_URL,
   PROGRAMME_URL,
-  VARIANCE_IMG_URL,
   VARIANCE_URL,
 } from "../constants";
 
 import styles from "./OtherProjects.module.scss";
 
 const otherProjects: OtherProjectType[] = [
-  createOtherProject("Programme", PROGRAMME_IMG_URL, PROGRAMME_URL),
-  createOtherProject("Variance", VARIANCE_IMG_URL, VARIANCE_URL),
-  createOtherProject("Essence", ESSENCE_IMG_URL, ESSENCE_URL),
-  createOtherProject("Good Colors", GOODCOLORS_IMG_URL, GOODCOLORS_URL),
-  createOtherProject("Glass Pass", GLASSPASS_IMG_URL, GLASSPASS_URL),
-  createOtherProject("Clipboard", CLIPBOARD_IMG_URL, CLIPBOARD_URL),
+  createOtherProject("Programme", ProgrammeImg, PROGRAMME_URL),
+  createOtherProject("Variance", ProgrammeImg, VARIANCE_URL),
+  createOtherProject("Essence", ProgrammeImg, ESSENCE_URL),
+  createOtherProject("Good Colors", ProgrammeImg, GOODCOLORS_URL),
+  createOtherProject("Glass Pass", ProgrammeImg, GLASSPASS_URL),
+  createOtherProject("Clipboard", ProgrammeImg, CLIPBOARD_URL),
 ];
 
 const OtherProjects = () => {
