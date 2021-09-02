@@ -33,11 +33,11 @@ const projects: ProjectType[] = [
 
 const Projects = () => {
   return (
-    <section className={styles.container}>
+    <section className={styles.container} id="projects">
       <h1>Projects</h1>
       <div className={styles.projects}>
-        {projects.map((project) => (
-          <Project {...project} />
+        {projects.map((project, index) => (
+          <Project {...project} key={index} />
         ))}
         <OtherProjects />
       </div>

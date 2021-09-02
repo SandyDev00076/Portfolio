@@ -12,7 +12,7 @@ import styles from "./AboutMe.module.scss";
 
 const AboutMe = () => {
   return (
-    <section className={styles.container}>
+    <section className={styles.container} id="aboutme">
       <div className={styles.leftSide}>
         <h1>Hello,</h1>
         <h2>Welcome to my website</h2>

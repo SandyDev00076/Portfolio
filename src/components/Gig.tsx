@@ -8,7 +8,7 @@ interface Props extends GigType {
 }
 const Gig = ({ name, role, duration, contri, index }: Props) => {
   return (
-    <section className={styles.container} key={index}>
+    <section className={styles.container}>
       <h2>{name}</h2>
       <h1>
         {role} | {duration}

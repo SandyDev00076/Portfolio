@@ -1,0 +1,28 @@
+@use '../styles/shared';
+
+.container {
+  @extend %glassmorph;
+  padding: 16px 32px;
+  border-radius: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 380px;
+  position: fixed;
+  top: 16px;
+  right: 16px;
+
+  & > a {
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--text-light-2);
+
+    &:hover {
+      color: var(--text-light-1);
+    }
+  }
+}
+
+.current {
+  color: var(--primary-dark) !important;
+}

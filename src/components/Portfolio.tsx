@@ -2,6 +2,7 @@ import React from "react";
 import AboutMe from "./AboutMe";
 import Journey from "./Journey";
 import Mail from "./Mail";
+import Navbar from "./Navbar";
 import Projects from "./Projects";
 
 const Portfolio = () => {
@@ -11,6 +12,7 @@ const Portfolio = () => {
       <Projects />
       <Journey />
       <Mail />
+      <Navbar />
     </section>
   );
 };
