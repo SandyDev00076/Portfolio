@@ -20,7 +20,12 @@ const Button = ({ children, onClick, small = false, ...props }: Props) => {
   }
 
   return (
-    <div className={styles.container} ref={containerRef}>
+    <div
+      className={`${styles.container} ${
+        props.className !== undefined ? props.className : ""
+      }`}
+      ref={containerRef}
+    >
       <button
         {...props}
         onClick={(e) => {

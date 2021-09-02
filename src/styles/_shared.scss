@@ -33,3 +33,34 @@
   border: 1px solid var(--white);
   backdrop-filter: blur(10px);
 }
+
+@mixin popFromLeftWithDelay($delay) {
+  transform: translateX(-16px);
+  opacity: 0;
+  animation: popFromLeft 0.4s 1 $delay ease-out forwards;
+}
+
+@mixin popWithDelay($delay) {
+  opacity: 0;
+  animation: pop 0.4s 1 $delay ease-out forwards;
+}
+
+@keyframes popFromLeft {
+  from {
+    transform: translateX(-16px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes pop {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

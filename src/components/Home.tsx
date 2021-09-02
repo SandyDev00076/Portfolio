@@ -38,7 +38,9 @@ const Home = ({ showHome }: Props) => {
           <h2>UI/UX Designer</h2>
           <h2>UI Developer</h2>
         </div>
-        <Button onClick={explore}>Explore</Button>
+        <Button onClick={explore} className={styles.exploreBtn}>
+          Explore
+        </Button>
       </section>
       <section className={styles.links}>
         <a href={BEHANCE_URL} target="_blank" rel="noopener noreferrer">
