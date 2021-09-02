@@ -1,10 +1,13 @@
-import React from "react";
+import React, { ReactElement } from "react";
 import Button from "atoms/Button";
 import { ProjectType } from "types/ProjectType";
 
 import styles from "./Project.module.scss";
 
-const Project = ({ title, subtitle, about, imageURL, link }: ProjectType) => {
+interface Props extends ProjectType {
+  blob: ReactElement<any, any>;
+}
+const Project = ({ title, subtitle, about, imageURL, link, blob }: Props) => {
   return (
     <section className={styles.container}>
       <div className={styles.proDetails}>
@@ -16,6 +19,7 @@ const Project = ({ title, subtitle, about, imageURL, link }: ProjectType) => {
         </a>
       </div>
       <img src={imageURL} alt={`${title}-mockup`} />
+      {blob}
     </section>
   );
 };

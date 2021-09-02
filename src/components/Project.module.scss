@@ -1,16 +1,26 @@
 @use '../styles/shared';
 
 .container {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 96px;
+  margin-bottom: 160px;
 
   & > img {
     height: 360px;
     width: auto;
     @extend %picShadow;
     border-radius: 10px;
+  }
+
+  & > svg {
+    position: absolute;
+    z-index: -1;
+    bottom: -88px;
+    right: -10px;
+    height: auto;
+    width: 240px;
   }
 }
 

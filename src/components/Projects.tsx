@@ -1,3 +1,4 @@
+import { AimBlob, BinderBlob, OrderlyBlob } from "assets/blobs";
 import React from "react";
 import { ProjectType } from "types/ProjectType";
 import { createProject } from "utils";
@@ -6,6 +7,8 @@ import OtherProjects from "./OtherProjects";
 import Project from "./Project";
 
 import styles from "./Projects.module.scss";
+
+const blobs = [<AimBlob />, <OrderlyBlob />, <BinderBlob />];
 
 const projects: ProjectType[] = [
   createProject(
@@ -37,7 +40,7 @@ const Projects = () => {
       <h1>Projects</h1>
       <div className={styles.projects}>
         {projects.map((project, index) => (
-          <Project {...project} key={index} />
+          <Project {...project} key={index} blob={blobs[index]} />
         ))}
         <OtherProjects />
       </div>
