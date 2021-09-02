@@ -18,8 +18,10 @@ const Project = ({ title, subtitle, about, imageURL, link, blob }: Props) => {
           <Button small>Visit</Button>
         </a>
       </div>
-      <img src={imageURL} alt={`${title}-mockup`} />
-      {blob}
+      <div className={styles.imgSection}>
+        <img src={imageURL} alt={`${title}-mockup`} />
+        {blob}
+      </div>
     </section>
   );
 };

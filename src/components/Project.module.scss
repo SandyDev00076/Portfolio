@@ -1,11 +1,14 @@
 @use '../styles/shared';
 
 .container {
-  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 160px;
+}
+
+.imgSection {
+  position: relative;
 
   & > img {
     height: 360px;
@@ -17,7 +20,7 @@
   & > svg {
     position: absolute;
     z-index: -1;
-    bottom: -88px;
+    bottom: -80px;
     right: -10px;
     height: auto;
     width: 240px;
