@@ -1,4 +1,34 @@
+@use '../styles/shared';
+
 .container {
-  padding: 32px;
+  @extend %lane;
+  padding-top: 64px;
+  padding-bottom: 64px;
   background-color: var(--primary-dark);
+  color: var(--white);
+  font-size: 1rem;
+
+  & > h1 {
+    font-weight: 400;
+    & > strong {
+      font-weight: bold;
+    }
+  }
+
+  & > h2 {
+    font-style: italic;
+    margin-bottom: 64px;
+  }
+}
+
+.toolsUsed {
+  text-align: right;
+  & a {
+    font-weight: 600;
+    color: var(--white);
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
