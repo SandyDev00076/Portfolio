@@ -64,3 +64,9 @@
     opacity: 1;
   }
 }
+
+@media screen and (max-width: 1200px) {
+  %lane {
+    padding: 0 14%;
+  }
+}

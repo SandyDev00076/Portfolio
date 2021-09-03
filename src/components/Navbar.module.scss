@@ -26,3 +26,20 @@
 .current {
   color: var(--primary-dark) !important;
 }
+
+@media screen and (max-width: 1200px) {
+  .container {
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    font-size: 0.8rem;
+    width: 80%;
+    padding: 16px 24px;
+  }
+}
