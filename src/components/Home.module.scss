@@ -9,6 +9,7 @@
 
 .skillsBg {
   position: absolute;
+  z-index: 0;
   top: 0;
   right: 0;
   height: 100vh;
@@ -17,6 +18,8 @@
 }
 
 .intro {
+  position: relative;
+  z-index: 3;
   margin: 0 96px;
   & h1 {
     color: var(--text-light-1);
@@ -44,6 +47,7 @@
 
 .links {
   position: absolute;
+  z-index: 2;
   bottom: 60px;
   left: 96px;
 
@@ -87,6 +91,7 @@
 .figmaIcon,
 .angularIcon {
   position: absolute;
+  z-index: 1;
   fill: var(--white);
   max-height: 500px;
   width: auto;
@@ -145,5 +150,91 @@
   }
   to {
     width: 40%;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .skillsBg {
+    display: none;
+  }
+
+  .reactIcon,
+  .vsCodeIcon,
+  .vueIcon,
+  .svelteIcon,
+  .figmaIcon,
+  .angularIcon {
+    fill: var(--primary-light);
+  }
+
+  .reactIcon {
+    top: 4%;
+  }
+
+  .vsCodeIcon {
+    top: 20%;
+    right: 60%;
+  }
+
+  .angularIcon {
+    top: 40%;
+    right: 14%;
+  }
+
+  .vueIcon {
+    right: 34%;
+  }
+
+  .figmaIcon {
+    right: 55%;
+  }
+
+  .svelteIcon {
+    top: 80%;
+    right: 14%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .links {
+    bottom: 32px;
+    left: 32px;
+  }
+
+  .intro {
+    margin: 0 32px;
+
+    & h1 {
+      font-size: 1.5rem;
+    }
+
+    & .role h2 {
+      font-size: 2rem;
+    }
+  }
+
+  .reactIcon {
+    height: 120px;
+  }
+
+  .vsCodeIcon {
+    height: 80px;
+  }
+
+  .angularIcon {
+    top: 34%;
+    height: 60px;
+  }
+
+  .vueIcon {
+    height: 40px;
+  }
+
+  .figmaIcon {
+    height: 100px;
+  }
+
+  .svelteIcon {
+    height: 40px;
   }
 }
