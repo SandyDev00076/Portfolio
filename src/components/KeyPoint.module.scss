@@ -42,3 +42,29 @@
     fill: var(--primary-dark);
   }
 }
+
+@media screen and (max-width: 600px) {
+  .icon {
+    & > svg {
+      height: 24px;
+    }
+  }
+  .blob {
+    height: 72px;
+  }
+
+  .container {
+    & h1 {
+      font-size: 1rem;
+    }
+    margin-bottom: 48px;
+  }
+
+  .line {
+    font-size: 0.8rem;
+  }
+
+  .details {
+    max-width: 200px;
+  }
+}

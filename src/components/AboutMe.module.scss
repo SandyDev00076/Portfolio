@@ -120,7 +120,7 @@
 
 @media screen and (max-width: 1024px) {
   .container {
-    padding-top: 72px;
+    padding-top: 80px;
   }
 }
 
@@ -130,5 +130,40 @@
   }
   .scrollTip {
     display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .leftSide {
+    & > h1 {
+      font-size: 2rem;
+    }
+
+    & > h2 {
+      font-size: 1rem;
+    }
+  }
+
+  .card {
+    margin-bottom: 64px;
+    & > p {
+      font-size: 1rem;
+    }
+
+    &::after {
+      width: 90px;
+      height: 90px;
+      border-radius: 45px;
+    }
+  }
+
+  .location,
+  .codingTools,
+  .designTools {
+    font-size: 0.7rem;
+    & > svg {
+      width: 20px;
+      height: auto;
+    }
   }
 }
