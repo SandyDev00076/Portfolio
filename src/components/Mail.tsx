@@ -7,6 +7,7 @@ import styles from "./Mail.module.scss";
 const Mail = () => {
   const contentRef = useRef<HTMLDivElement>(null);
   useEffect(() => {
+    if (!contentRef.current) return;
     const options = {
       root: null,
       threshold: 0.6,
@@ -15,11 +16,16 @@ const Mail = () => {
     const observer = new IntersectionObserver((entries, observer) => {
       entries.forEach((entry) => {
         if (!entry.isIntersecting) return;
-        contentRef.current?.classList.add(styles.appear);
-        if (contentRef.current) observer.unobserve(contentRef.current);
+        if (contentRef.current) {
+          contentRef.current.classList.add(styles.appear);
+          observer.unobserve(contentRef.current);
+        }
       });
     }, options);
-    if (contentRef.current) observer.observe(contentRef.current);
+    observer.observe(contentRef.current);
+    return () => {
+      observer.disconnect();
+    };
   }, []);
   return (
     <section className={styles.container}>
