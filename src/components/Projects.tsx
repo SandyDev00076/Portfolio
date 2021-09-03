@@ -6,6 +6,7 @@ import { createProject } from "utils";
 import { AIM_URL, BINDER_URL, ORDERLY_URL } from "../constants";
 import OtherProjects from "./OtherProjects";
 import Project from "./Project";
+import Heading from "./Heading";
 
 import styles from "./Projects.module.scss";
 
@@ -38,7 +39,7 @@ const projects: ProjectType[] = [
 const Projects = () => {
   return (
     <section className={styles.container} id="projects">
-      <h1>Projects</h1>
+      <Heading>Projects</Heading>
       <div className={styles.projects}>
         {projects.map((project, index) => (
           <Project {...project} key={index} blob={blobs[index]} />

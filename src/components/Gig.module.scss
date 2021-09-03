@@ -1,3 +1,5 @@
+@use '../styles/shared';
+
 @mixin fadeInStartWithDelay($delay) {
   opacity: 0;
   transform: translateY(16px);
@@ -8,33 +10,36 @@
   position: relative;
   margin-bottom: 96px;
 
+  & > span {
+    @include fadeInStartWithDelay(0.3s);
+    z-index: -1;
+    position: absolute;
+    top: -60%;
+    left: -80px;
+    font-weight: bold;
+    font-size: 180px;
+    color: var(--primary-light);
+  }
+}
+
+.content {
+  @extend %glassmorph;
+  @include fadeInStartWithDelay(0s);
+
   & > h2 {
-    @include fadeInStartWithDelay(0s);
     font-size: 2rem;
     color: var(--text);
     font-weight: 600;
   }
 
   & > h1 {
-    @include fadeInStartWithDelay(0s);
     font-weight: 400;
     color: var(--text-light-1);
     margin-bottom: 16px;
   }
 
   & > p {
-    @include fadeInStartWithDelay(0s);
     color: var(--text);
-  }
-
-  & > span {
-    @include fadeInStartWithDelay(0.5s);
-    position: absolute;
-    top: -80%;
-    left: -120px;
-    font-weight: bold;
-    font-size: 180px;
-    color: var(--primary-light);
   }
 }
 
@@ -44,15 +49,10 @@
 }
 
 .appear {
-  & > h1 {
+  & > div {
     @extend .appearRules;
   }
-  & > h2 {
-    @extend .appearRules;
-  }
-  & > p {
-    @extend .appearRules;
-  }
+
   & > span {
     @extend .appearRules;
   }

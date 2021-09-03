@@ -33,11 +33,13 @@ const Gig = ({ name, role, duration, contri, index }: Props) => {
 
   return (
     <section className={styles.container} ref={containerRef}>
-      <h2>{name}</h2>
-      <h1>
-        {role} | {duration}
-      </h1>
-      <p>{contri}</p>
+      <div className={styles.content}>
+        <h2>{name}</h2>
+        <h1>
+          {role} | {duration}
+        </h1>
+        <p>{contri}</p>
+      </div>
       <span>{index}</span>
     </section>
   );

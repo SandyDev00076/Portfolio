@@ -22,7 +22,6 @@ const Project = ({ title, subtitle, about, imageURL, link, blob }: Props) => {
     const observer = new IntersectionObserver((entries, observer) => {
       entries.forEach((entry) => {
         if (!entry.isIntersecting) return;
-        console.log(entry.target);
         // do your task here
         if (projectDetailsRef.current)
           projectDetailsRef.current.classList.add(styles.appear);

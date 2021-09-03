@@ -1,0 +1,17 @@
+@use '../styles/shared';
+
+.heading {
+  @extend %heading;
+  transform: translateX(-160px);
+  transition: transform 0.5s ease-out;
+  padding: 0 10%;
+}
+
+.right {
+  text-align: right;
+  transform: translateX(160px);
+}
+
+.appear {
+  transform: translateX(0px);
+}

@@ -2,6 +2,7 @@ import React from "react";
 import { GigType } from "types/GigType";
 import { createGig } from "utils";
 import Gig from "./Gig";
+import Heading from "./Heading";
 
 import styles from "./Journey.module.scss";
 
@@ -23,7 +24,7 @@ const gigs: GigType[] = [
 const Journey = () => {
   return (
     <section className={styles.container} id="journey">
-      <h1>Journey</h1>
+      <Heading dir="right">Journey</Heading>
       <div className={styles.gigs}>
         {gigs.map((gig, index) => (
           <Gig {...gig} index={gigs.length - index} key={index} />
