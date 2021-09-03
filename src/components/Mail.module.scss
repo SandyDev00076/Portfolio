@@ -2,10 +2,16 @@
 
 .container {
   @extend %lane;
-  padding-top: 96px;
-  padding-bottom: 96px;
+  padding-top: 80px;
+  padding-bottom: 80px;
   background-color: var(--mail-section);
   color: var(--text);
+}
+
+.content {
+  opacity: 0;
+  transform: translateX(-80px);
+  transition: all ease-out 0.5s;
 
   & > h1 {
     font-size: 1.5rem;
@@ -16,4 +22,9 @@
     font-size: 3rem;
     margin-bottom: 32px;
   }
+}
+
+.appear {
+  opacity: 1;
+  transform: translateX(0px);
 }
