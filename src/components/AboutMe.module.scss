@@ -1,4 +1,4 @@
-@use '../styles/shared';
+@use '../styles/shared' as *;
 
 .container {
   padding: 32px 10%;
@@ -14,6 +14,7 @@
     font-size: 4rem;
     font-weight: 600;
     color: var(--text);
+    @include popFromLeftWithDelay(200ms);
   }
 
   & > h2 {
@@ -21,6 +22,7 @@
     font-weight: 400;
     margin-bottom: 80px;
     color: var(--text);
+    @include popFromLeftWithDelay(250ms);
   }
 
   & > h3 {
@@ -28,13 +30,15 @@
     font-weight: 400;
     color: var(--text-light-2);
     font-style: italic;
+    @include popWithDelay(1500ms);
   }
 }
 
 .card {
-  color: var(--text);
   position: relative;
   @extend %glassmorph;
+  @include popFromLeftWithDelay(350ms);
+  color: var(--text);
   margin-bottom: 80px;
 
   & > p {
@@ -58,6 +62,8 @@
     background: url(../assets/images/selfPic.jpg);
     background-size: cover;
     background-position: center;
+    transform: scale(0);
+    animation: scaleUp 1 0.3s ease-in 370ms forwards;
   }
 }
 
@@ -84,4 +90,25 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.keyPoints > section:nth-child(1) {
+  @include popWithDelay(600ms);
+}
+
+.keyPoints > section:nth-child(2) {
+  @include popWithDelay(900ms);
+}
+
+.keyPoints > section:nth-child(3) {
+  @include popWithDelay(1200ms);
+}
+
+@keyframes scaleUp {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
 }
