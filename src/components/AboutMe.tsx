@@ -23,7 +23,6 @@ const AboutMe = () => {
     };
     const observer = new IntersectionObserver((entries, observer) => {
       entries.forEach((entry) => {
-        console.log(entry);
         if (entry.isIntersecting) return;
         if (scrollTipRef.current)
           scrollTipRef.current.classList.add(styles.disappear);

@@ -27,7 +27,6 @@ interface Props {
 const Home = ({ showHome }: Props) => {
   function explore() {
     showHome(false);
-    console.log("clicked explore");
   }
 
   return (
