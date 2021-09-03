@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import {
   BrushIcon,
   CodeIcon,
@@ -11,8 +11,33 @@ import KeyPoint from "./KeyPoint";
 import styles from "./AboutMe.module.scss";
 
 const AboutMe = () => {
+  const containerRef = useRef<HTMLDivElement>(null);
+  const scrollTipRef = useRef<HTMLHeadingElement>(null);
+
+  useEffect(() => {
+    if (!containerRef.current || !scrollTipRef.current) return;
+    const options = {
+      root: null,
+      threshold: 0,
+      rootMargin: "0px",
+    };
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach((entry) => {
+        console.log(entry);
+        if (entry.isIntersecting) return;
+        if (scrollTipRef.current)
+          scrollTipRef.current.classList.add(styles.disappear);
+        if (containerRef.current) observer.unobserve(containerRef.current);
+      });
+    }, options);
+    observer.observe(containerRef.current);
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
+
   return (
-    <section className={styles.container} id="aboutme">
+    <section className={styles.container} id="aboutme" ref={containerRef}>
       <div className={styles.leftSide}>
         <h1>Hello,</h1>
         <h2>Welcome to my website</h2>
@@ -34,7 +59,9 @@ const AboutMe = () => {
             <span>Nagpur, India</span>
           </div>
         </section>
-        <h3>Scroll to view more</h3>
+        <h3 ref={scrollTipRef} className={styles.scrollTip}>
+          Scroll to view more
+        </h3>
       </div>
       <div className={styles.rightSide}>
         <div className={styles.keyPoints}>

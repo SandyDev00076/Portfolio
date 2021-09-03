@@ -24,14 +24,6 @@
     color: var(--text);
     @include popFromLeftWithDelay(250ms);
   }
-
-  & > h3 {
-    font-size: 1.5rem;
-    font-weight: 400;
-    color: var(--text-light-2);
-    font-style: italic;
-    @include popWithDelay(1500ms);
-  }
 }
 
 .card {
@@ -104,6 +96,14 @@
   @include popWithDelay(1200ms);
 }
 
+.scrollTip {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--text-light-2);
+  font-style: italic;
+  @include popWithDelay(1500ms);
+}
+
 @keyframes scaleUp {
   from {
     transform: scale(0);
@@ -111,4 +111,9 @@
   to {
     transform: scale(1);
   }
+}
+
+.disappear {
+  opacity: 0;
+  animation: none;
 }
