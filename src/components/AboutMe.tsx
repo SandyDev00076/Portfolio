@@ -65,14 +65,14 @@ const AboutMe = () => {
       <div className={styles.rightSide}>
         <div className={styles.keyPoints}>
           <KeyPoint
-            title="Hybrid Apps"
-            line="Created cross platform apps using Ionic & Cordova"
-            icon={<LaptopIcon />}
-          />
-          <KeyPoint
             title="Web Apps"
             line="Created responsive web apps, PWAs"
             icon={<PublicIcon />}
+          />
+          <KeyPoint
+            title="Hybrid Apps"
+            line="Created cross platform apps using Ionic & Cordova"
+            icon={<LaptopIcon />}
           />
           <KeyPoint
             title="Designs"
