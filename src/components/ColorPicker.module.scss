@@ -1,9 +1,12 @@
+@use '../styles/shared' as *;
+
 .container {
   position: absolute;
   top: 60px;
   left: 96px;
   display: flex;
   align-items: center;
+  @include popWithDelay(1.3s);
 }
 
 .colorBtn {
