@@ -50,3 +50,14 @@
     color: var(--white);
   }
 }
+
+@media screen and (max-width: 600px) {
+  .grid {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  }
+  .container {
+    & > h1 {
+      font-size: 1.5rem;
+    }
+  }
+}
