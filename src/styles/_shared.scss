@@ -70,3 +70,9 @@
     padding: 0 14%;
   }
 }
+
+@media screen and (max-width: 600px) {
+  %heading {
+    font-size: 4rem;
+  }
+}

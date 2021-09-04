@@ -59,3 +59,26 @@
   opacity: 1;
   transform: translateX(0px);
 }
+
+@media screen and (max-width: 600px) {
+  .container {
+    flex-direction: column-reverse;
+  }
+  .imgSection {
+    margin-bottom: 96px;
+  }
+  .proDetails {
+    margin-right: 0;
+    & > h1 {
+      font-size: 1.5rem;
+    }
+
+    & > h2 {
+      font-size: 1rem;
+    }
+
+    & > p {
+      font-size: 0.8rem;
+    }
+  }
+}
