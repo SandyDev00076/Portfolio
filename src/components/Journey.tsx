@@ -11,13 +11,13 @@ const gigs: GigType[] = [
     "ECS Infosolutions",
     "Senior Software Developer",
     "Oct 2019 - Present",
-    "My job role in all my projects in ECS was of a front end developer, where I created UI for various applications that are capable of telephony operations and contact centre reporting."
+    "Worked on several projects where I created UI for various applications that are capable of telephony operations and contact centre reporting."
   ),
   createGig(
     "Siemens Technology & Services",
     "Software Developer",
     "Jan 2018 - Oct 2019",
-    "My job role in all my projects in ECS was of a front end developer, where I created UI for various applications that are capable of telephony operations and contact centre reporting."
+    "Worked on UI tasks for several hybrid apps which we built using Ionic and Cordova, that were related to fire panel reporting and safety."
   ),
 ];
 
