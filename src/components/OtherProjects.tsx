@@ -1,5 +1,6 @@
 import React from "react";
 import {
+  ClipboardImg,
   EssenceImg,
   GlassPassImg,
   GoodColorsImg,
@@ -25,7 +26,7 @@ const otherProjects: OtherProjectType[] = [
   createOtherProject("Essence", EssenceImg, ESSENCE_URL),
   createOtherProject("Good Colors", GoodColorsImg, GOODCOLORS_URL),
   createOtherProject("Glass Pass", GlassPassImg, GLASSPASS_URL),
-  createOtherProject("Clipboard", GlassPassImg, CLIPBOARD_URL),
+  createOtherProject("Clipboard", ClipboardImg, CLIPBOARD_URL),
 ];
 
 const OtherProjects = () => {
