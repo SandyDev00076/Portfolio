@@ -134,6 +134,10 @@
 }
 
 @media screen and (max-width: 600px) {
+  .container {
+    padding-top: 64px;
+  }
+
   .leftSide {
     & > h1 {
       font-size: 2rem;
