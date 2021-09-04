@@ -40,6 +40,14 @@ input {
   }
 }
 
+input,
+textarea,
+button,
+select,
+a {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
 .redApp {
   --primary: hsl(var(--hue-1), 96%, 90%);
   --primary-dark: hsl(var(--hue-1), 97%, 75%);
