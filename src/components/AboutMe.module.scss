@@ -31,7 +31,6 @@
   @extend %glassmorph;
   @include popFromLeftWithDelay(350ms);
   color: var(--text);
-  margin-bottom: 80px;
 
   & > p {
     max-width: 70%;
@@ -102,6 +101,7 @@
   color: var(--text-light-2);
   font-style: italic;
   @include popWithDelay(1500ms);
+  margin-top: 80px;
 }
 
 @keyframes scaleUp {
@@ -114,8 +114,7 @@
 }
 
 .disappear {
-  opacity: 0;
-  animation: none;
+  display: none;
 }
 
 @media screen and (max-width: 1024px) {
