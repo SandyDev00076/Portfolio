@@ -20,6 +20,7 @@ import {
 } from "../constants";
 
 import styles from "./Home.module.scss";
+import ColorPicker from "./ColorPicker";
 
 interface Props {
   showHome: React.Dispatch<React.SetStateAction<boolean>>;
@@ -64,7 +65,7 @@ const Home = ({ showHome }: Props) => {
       >
         <path
           d=" M 65.435 0 L 714 0 L 714 1024 L 65.435 1024 C 205.301 545.5 -136.077 355.5 65.435 0 Z "
-          fill="rgb(254,205,205)"
+          // fill="rgb(254,205,205)"
         />
       </svg>
       <ReactIcon className={styles.reactIcon} />
@@ -73,6 +74,7 @@ const Home = ({ showHome }: Props) => {
       <VueIcon className={styles.vueIcon} />
       <FigmaIcon className={styles.figmaIcon} />
       <SvelteIcon className={styles.svelteIcon} />
+      <ColorPicker />
     </section>
   );
 };

@@ -40,6 +40,30 @@ input {
   }
 }
 
+.redApp {
+  --primary: hsl(var(--hue-1), 96%, 90%);
+  --primary-dark: hsl(var(--hue-1), 97%, 75%);
+  --primary-light: hsl(var(--hue-1), 92%, 95%);
+}
+
+.blueApp {
+  --primary: hsl(var(--hue-2), 96%, 90%);
+  --primary-dark: hsl(var(--hue-2), 97%, 75%);
+  --primary-light: hsl(var(--hue-2), 92%, 95%);
+}
+
+.purpleApp {
+  --primary: hsl(var(--hue-3), 96%, 90%);
+  --primary-dark: hsl(var(--hue-3), 97%, 75%);
+  --primary-light: hsl(var(--hue-3), 92%, 95%);
+}
+
+.greenApp {
+  --primary: hsl(var(--hue-4), 96%, 90%);
+  --primary-dark: hsl(var(--hue-4), 97%, 75%);
+  --primary-light: hsl(var(--hue-4), 92%, 95%);
+}
+
 @media screen and (max-width: 600px) {
   body {
     max-width: 100vw;

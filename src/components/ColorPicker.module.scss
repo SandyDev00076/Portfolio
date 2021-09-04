@@ -1,0 +1,41 @@
+.container {
+  position: absolute;
+  top: 60px;
+  left: 96px;
+  display: flex;
+  align-items: center;
+}
+
+.colorBtn {
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  margin-right: 10px;
+  border: none;
+  cursor: pointer;
+  transition: width 0.3s ease-out;
+}
+
+.selected {
+  width: 40px;
+}
+
+.red {
+  @extend .colorBtn;
+  background-color: hsl(var(--hue-1), 97%, 75%);
+}
+
+.blue {
+  @extend .colorBtn;
+  background-color: hsl(var(--hue-2), 97%, 75%);
+}
+
+.purple {
+  @extend .colorBtn;
+  background-color: hsl(var(--hue-3), 97%, 75%);
+}
+
+.green {
+  @extend .colorBtn;
+  background-color: hsl(var(--hue-4), 97%, 75%);
+}

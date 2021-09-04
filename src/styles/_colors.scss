@@ -1,4 +1,10 @@
 :root {
+  // hues
+  --hue-1: 360; // default // red
+  --hue-2: 253; // blue
+  --hue-3: 266; // purple
+  --hue-4: 120; // green
+
   // text
   --text: hsl(0, 0%, 20%);
   --text-light-1: hsl(0, 0%, 47%);
@@ -12,9 +18,9 @@
   --github: hsl(0, 2%, 9%);
 
   // primary
-  --primary: hsl(360, 96%, 90%);
-  --primary-dark: rgb(253, 129, 129);
-  --primary-light: hsl(360, 92%, 95%);
+  --primary: hsl(var(--hue-1), 96%, 90%);
+  --primary-dark: hsl(var(--hue-1), 97%, 75%);
+  --primary-light: hsl(var(--hue-1), 92%, 95%);
 
   // blobs
   --blob-1: hsl(203, 84%, 90%);
