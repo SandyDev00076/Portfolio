@@ -32,3 +32,13 @@
     }
   }
 }
+
+@media screen and (max-width: 600px) {
+  .container > h1 {
+    font-size: 1.2rem;
+  }
+
+  .toolsUsed {
+    font-size: 0.8rem;
+  }
+}

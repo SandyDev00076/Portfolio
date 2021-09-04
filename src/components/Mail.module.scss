@@ -28,3 +28,15 @@
   opacity: 1;
   transform: translateX(0px);
 }
+
+@media screen and (max-width: 600px) {
+  .content {
+    & > h1 {
+      font-size: 1.2rem;
+    }
+
+    & > h2 {
+      font-size: 2rem;
+    }
+  }
+}
