@@ -16,7 +16,7 @@ const Project = ({ title, subtitle, about, imageURL, link, blob }: Props) => {
     if (!containerRef.current) return;
     const options = {
       root: null,
-      threshold: 0.6,
+      threshold: 0.5,
       rootMargin: "0px",
     };
     const observer = new IntersectionObserver((entries, observer) => {
