@@ -7,10 +7,10 @@
   padding-bottom: 32px;
   background-color: var(--primary-dark);
   color: var(--white);
-  font-size: 1rem;
 }
 
 .toolsUsed {
+  font-size: 0.8rem;
   & a {
     font-weight: 600;
     color: var(--white);
@@ -22,15 +22,12 @@
 }
 
 .endNote {
+  font-size: 1rem;
   margin-bottom: 16px;
 }
 
 @media screen and (max-width: 600px) {
   .container {
     text-align: left;
-  }
-
-  .toolsUsed {
-    font-size: 0.8rem;
   }
 }
