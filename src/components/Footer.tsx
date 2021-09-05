@@ -5,13 +5,16 @@ import styles from "./Footer.module.scss";
 const Footer = () => {
   return (
     <footer className={styles.container}>
-      <h1>
+      {/* <h1>
         Portfolio website created and designed by <strong>me</strong>.
-      </h1>
-      <h2>Hope you liked it!</h2>
+      </h1> */}
+      {/* <h2>Hope you liked it!</h2> */}
+      <div className={styles.endNote}>
+        Portfolio website created and designed by <strong>me</strong>.
+      </div>
       <div className={styles.toolsUsed}>
         <div>
-          Created using{" "}
+          Built using{" "}
           <a
             target="_blank"
             rel="noopener noreferrer"
