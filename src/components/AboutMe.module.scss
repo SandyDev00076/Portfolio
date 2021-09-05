@@ -128,8 +128,13 @@
     grid-template-columns: 1fr;
     gap: 32px;
   }
+
   .scrollTip {
     display: none;
+  }
+
+  .card {
+    margin-bottom: 64px;
   }
 }
 
@@ -149,7 +154,6 @@
   }
 
   .card {
-    margin-bottom: 64px;
     & > p {
       font-size: 1rem;
     }

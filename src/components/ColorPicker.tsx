@@ -11,7 +11,7 @@ const ColorPicker = () => {
 
   return (
     <section className={styles.container}>
-      {["red", "blue", "purple"].map((entry) => (
+      {["red", "blue", "purple", "orange"].map((entry) => (
         <button
           key={entry}
           className={`${styles[entry]} ${

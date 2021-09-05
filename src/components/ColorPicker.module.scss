@@ -43,6 +43,11 @@
   background-color: hsl(var(--hue-4), 97%, 75%);
 }
 
+.orange {
+  @extend .colorBtn;
+  background-color: hsl(var(--hue-5), 97%, 75%);
+}
+
 @media screen and (max-width: 600px) {
   .container {
     top: 32px;
