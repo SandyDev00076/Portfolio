@@ -31,7 +31,7 @@ const Mail = () => {
     <section className={styles.container}>
       <div className={styles.content} ref={contentRef}>
         <h1>Wanna reach out to me ?</h1>
-        <h2>Drop a mail</h2>
+        <h2>Get in touch</h2>
         <a href={`mailto:${MAILID}`}>
           <Button>Write a mail</Button>
         </a>
