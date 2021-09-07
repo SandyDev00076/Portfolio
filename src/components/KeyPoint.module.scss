@@ -1,34 +1,43 @@
 .container {
+  position: relative;
   display: flex;
+  justify-content: center;
   align-items: center;
   color: var(--text);
-  margin-bottom: 64px;
-  position: relative;
-
-  & h1 {
-    font-size: 1.2rem;
-    font-weight: 600;
-  }
 }
 
 .icon {
   z-index: 1;
+  position: absolute;
+  top: -24px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
   & > svg {
-    fill: var(--white);
+    fill: var(--primary-light);
     margin-right: 40px;
-    height: 32px;
+    height: 50px;
     width: auto;
   }
 }
 
 .details {
+  position: relative;
+  z-index: 2;
   max-width: 300px;
   & > h1 {
+    font-size: 2.5rem;
     margin-bottom: 2px;
+  }
+  & > h2 {
+    font-size: 1.2rem;
+    font-weight: 400;
   }
 }
 
 .blob {
+  display: none;
   position: absolute;
   z-index: 0;
   top: 0;
@@ -40,31 +49,5 @@
   width: auto;
   & > path {
     fill: var(--primary-dark);
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .icon {
-    & > svg {
-      height: 24px;
-    }
-  }
-  .blob {
-    height: 72px;
-  }
-
-  .container {
-    & h1 {
-      font-size: 1rem;
-    }
-    margin-bottom: 48px;
-  }
-
-  .line {
-    font-size: 0.8rem;
-  }
-
-  .details {
-    max-width: 200px;
   }
 }

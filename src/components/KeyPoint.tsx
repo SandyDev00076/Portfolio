@@ -14,7 +14,7 @@ const KeyPoint = ({ title, line, icon }: Props) => {
       <div className={styles.icon}>{icon}</div>
       <div className={styles.details}>
         <h1>{title}</h1>
-        <div className={styles.line}>{line}</div>
+        <h2>{line}</h2>
       </div>
       <KP className={styles.blob} />
     </section>
