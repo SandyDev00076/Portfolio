@@ -7,6 +7,7 @@
   align-items: center;
   grid-template-columns: 0.9fr 1fr;
   gap: 64px;
+  margin-bottom: 90px;
 }
 
 .leftSide {
@@ -78,9 +79,9 @@
 }
 
 .rightSide {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  position: relative;
+  display: grid;
+  place-items: center;
 }
 
 .scrollTip {
@@ -90,6 +91,17 @@
   font-style: italic;
   @include popWithDelay(1500ms);
   margin-top: 80px;
+}
+
+.blobBg {
+  width: 360px;
+  height: auto;
+  position: absolute;
+  z-index: -1;
+  bottom: -64px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
 }
 
 @keyframes scaleUp {

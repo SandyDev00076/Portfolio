@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { BrushIcon, CodeIcon, MapIcon } from "assets/icons";
 import KeyPoints from "./KeyPoints";
+import { KP } from "assets/blobs";
 
 import styles from "./AboutMe.module.scss";
 
@@ -58,6 +59,7 @@ const AboutMe = () => {
       </div>
       <div className={styles.rightSide}>
         <KeyPoints />
+        <KP className={styles.blobBg} />
       </div>
     </section>
   );
