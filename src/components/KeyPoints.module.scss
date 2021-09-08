@@ -1,9 +1,19 @@
 .container {
   position: relative;
   width: calc(240px + 60px); // 240px - card width, 60px - buffer
-  overflow-x: auto;
+  overflow: hidden;
 }
 
 .keypoints {
   display: flex;
+  animation: initialScroll infinite 5s linear;
+}
+
+@keyframes initialScroll {
+  from {
+    margin-left: 0px;
+  }
+  to {
+    margin-left: -100%;
+  }
 }

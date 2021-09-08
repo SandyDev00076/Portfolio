@@ -23,6 +23,11 @@ const KeyPoints = () => {
           line="Created and published designs using Figma, Adobe XD and Behance"
           icon={<BrushIcon />}
         />
+        <KeyPoint
+          title="Web Apps"
+          line="Created responsive web apps, PWAs"
+          icon={<PublicIcon />}
+        />
       </div>
     </section>
   );
