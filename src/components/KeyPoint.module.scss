@@ -5,6 +5,12 @@
   border-radius: 20px;
   min-width: 240px;
   margin-right: 60px;
+  &:first-child {
+    margin-left: 30px;
+  }
+  &:last-child {
+    margin-right: 30px;
+  }
 }
 
 .icon {
