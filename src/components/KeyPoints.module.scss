@@ -6,14 +6,17 @@
 
 .keypoints {
   display: flex;
-  animation: initialScroll infinite 5s linear;
+  animation: initialScroll 3 5s ease-in-out forwards;
 }
 
 @keyframes initialScroll {
-  from {
-    margin-left: 0px;
+  0% {
+    transform: translateX(0px);
   }
-  to {
-    margin-left: -100%;
+  80% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(-300px);
   }
 }
