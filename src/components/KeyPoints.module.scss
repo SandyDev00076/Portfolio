@@ -6,7 +6,7 @@
 
 .keypoints {
   display: flex;
-  animation: initialScroll 3 5s ease-in-out forwards;
+  animation: initialScroll infinite 5s ease-in-out;
 }
 
 @keyframes initialScroll {
