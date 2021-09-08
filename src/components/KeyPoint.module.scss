@@ -3,7 +3,8 @@
 .container {
   @extend %glassmorph;
   border-radius: 20px;
-  width: 240px;
+  min-width: 240px;
+  margin-right: 60px;
 }
 
 .icon {

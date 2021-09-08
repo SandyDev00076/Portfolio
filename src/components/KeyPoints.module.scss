@@ -1,6 +1,10 @@
 .container {
-  display: flex;
-  justify-content: center;
+  position: relative;
   width: calc(240px + 60px); // 240px - card width, 60px - buffer
-  overflow: hidden;
+  overflow-x: auto;
+}
+
+.keypoints {
+  display: flex;
+  padding: 0 30px;
 }
