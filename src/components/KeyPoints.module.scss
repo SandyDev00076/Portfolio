@@ -1,12 +1,14 @@
 .container {
+  perspective: 500px;
   position: relative;
   width: calc(240px + 60px); // 240px - card width, 60px - buffer
   overflow: hidden;
 }
 
 .keypoints {
-  height: 260px;
+  height: 300px;
   position: relative;
+  border-radius: 20px;
 }
 
 .animateSlide {
@@ -15,15 +17,20 @@
 
 @keyframes cardSlide {
   0% {
-    transform: translateX(300px);
+    transform: translateX(300px) rotateY(0deg);
   }
 
   10%,
   90% {
-    transform: translateX(0px);
+    transform: translateX(0px) rotateY(0deg);
+  }
+
+  20%,
+  80% {
+    transform: translateX(0px) rotateY(-18deg);
   }
 
   100% {
-    transform: translateX(-300px);
+    transform: translateX(-300px) rotateY(0deg);
   }
 }
