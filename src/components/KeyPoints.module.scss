@@ -1,5 +1,4 @@
 .container {
-  perspective: 500px;
   position: relative;
   width: calc(240px + 60px); // 240px - card width, 60px - buffer
   overflow: hidden;
@@ -9,10 +8,19 @@
   height: 300px;
   position: relative;
   border-radius: 20px;
+  perspective: 600px;
 }
 
 .animateSlide {
   animation: cardSlide 4s ease-in-out;
+}
+
+.animateCardTitle {
+  animation: cardTitleAnim 4s ease-in-out;
+}
+
+.animateCardLine {
+  animation: cardLineAnim 4s ease-in-out;
 }
 
 @keyframes cardSlide {
@@ -32,5 +40,33 @@
 
   100% {
     transform: translateX(-300px) rotateY(0deg);
+  }
+}
+
+@keyframes cardTitleAnim {
+  0%,
+  10%,
+  90%,
+  100% {
+    transform: translateZ(0px);
+  }
+
+  20%,
+  80% {
+    transform: translateZ(100px);
+  }
+}
+
+@keyframes cardLineAnim {
+  0%,
+  10%,
+  90%,
+  100% {
+    transform: translateZ(0px);
+  }
+
+  20%,
+  80% {
+    transform: translateZ(80px);
   }
 }
