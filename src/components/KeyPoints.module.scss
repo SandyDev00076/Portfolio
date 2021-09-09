@@ -1,6 +1,6 @@
 .container {
   position: relative;
-  width: calc(240px + 60px); // 240px - card width, 60px - buffer
+  width: calc(260px + 60px); // 240px - card width, 60px - buffer
   overflow: hidden;
 }
 
@@ -68,5 +68,11 @@
   20%,
   80% {
     transform: translateZ(80px);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    width: calc(200px + 60px); // 200px - card width, 60px - buffer
   }
 }
