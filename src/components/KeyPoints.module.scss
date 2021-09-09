@@ -17,21 +17,21 @@
 
 @keyframes cardSlide {
   0% {
-    transform: translateX(300px) rotateY(0deg) scale(0.8);
+    transform: translateX(300px) rotateY(0deg) scale(0.8) rotateX(0deg);
   }
 
   10%,
   90% {
-    transform: translateX(0px) rotateY(0deg) scale(1);
+    transform: translateX(0px) rotateY(0deg) scale(1) rotateX(0deg);
   }
 
   20%,
   80% {
-    transform: translateX(0px) rotateY(-18deg) scale(1);
+    transform: translateX(0px) rotateY(-18deg) scale(1) rotateX(4deg);
   }
 
   100% {
-    transform: translateX(-300px) rotateY(0deg) scale(0.8);
+    transform: translateX(-300px) rotateY(0deg) scale(0.8) rotateX(0deg);
   }
 }
 
