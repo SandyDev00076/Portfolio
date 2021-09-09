@@ -5,22 +5,23 @@
   min-height: 100vh;
   display: grid;
   align-items: center;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 0.9fr 1fr;
   gap: 64px;
+  margin-bottom: 90px;
 }
 
 .leftSide {
   & > h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 600;
     color: var(--text);
     @include popFromLeftWithDelay(200ms);
   }
 
   & > h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 400;
-    margin-bottom: 96px;
+    margin-bottom: 112px;
     color: var(--text-light-1);
     @include popFromLeftWithDelay(250ms);
   }
@@ -78,21 +79,10 @@
 }
 
 .rightSide {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.keyPoints > section:nth-child(1) {
-  @include popWithDelay(600ms);
-}
-
-.keyPoints > section:nth-child(2) {
-  @include popWithDelay(900ms);
-}
-
-.keyPoints > section:nth-child(3) {
-  @include popWithDelay(1200ms);
+  position: relative;
+  display: grid;
+  place-items: center;
+  @include popWithDelay(850ms);
 }
 
 .scrollTip {
@@ -100,8 +90,20 @@
   font-weight: 400;
   color: var(--text-light-2);
   font-style: italic;
-  @include popWithDelay(1500ms);
+  @include popWithDelay(1200ms);
   margin-top: 80px;
+  animation: scrollTipAnim infinite alternate-reverse ease-in-out 1s;
+}
+
+.blobBg {
+  width: 360px;
+  height: auto;
+  position: absolute;
+  z-index: -1;
+  bottom: -64px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
 }
 
 @keyframes scaleUp {
@@ -110,6 +112,15 @@
   }
   to {
     transform: scale(1);
+  }
+}
+
+@keyframes scrollTipAnim {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.5;
   }
 }
 
@@ -127,6 +138,7 @@
   .container {
     grid-template-columns: 1fr;
     gap: 32px;
+    margin-bottom: 128px;
   }
 
   .scrollTip {
@@ -173,5 +185,9 @@
       width: 20px;
       height: auto;
     }
+  }
+
+  .blobBg {
+    width: 300px;
   }
 }

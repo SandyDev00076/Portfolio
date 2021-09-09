@@ -1,12 +1,7 @@
 import React, { useEffect, useRef } from "react";
-import {
-  BrushIcon,
-  CodeIcon,
-  LaptopIcon,
-  MapIcon,
-  PublicIcon,
-} from "assets/icons";
-import KeyPoint from "./KeyPoint";
+import { BrushIcon, CodeIcon, MapIcon } from "assets/icons";
+import KeyPoints from "./KeyPoints";
+import { KP } from "assets/blobs";
 
 import styles from "./AboutMe.module.scss";
 
@@ -63,23 +58,8 @@ const AboutMe = () => {
         </h3>
       </div>
       <div className={styles.rightSide}>
-        <div className={styles.keyPoints}>
-          <KeyPoint
-            title="Web Apps"
-            line="Created responsive web apps, PWAs"
-            icon={<PublicIcon />}
-          />
-          <KeyPoint
-            title="Hybrid Apps"
-            line="Created cross platform apps using Ionic & Cordova"
-            icon={<LaptopIcon />}
-          />
-          <KeyPoint
-            title="Designs"
-            line="Created and published designs using Figma, Adobe XD and Behance"
-            icon={<BrushIcon />}
-          />
-        </div>
+        <KeyPoints />
+        <KP className={styles.blobBg} />
       </div>
     </section>
   );

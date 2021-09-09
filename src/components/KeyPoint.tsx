@@ -1,4 +1,3 @@
-import { KP } from "assets/blobs";
 import React from "react";
 
 import styles from "./KeyPoint.module.scss";
@@ -13,10 +12,9 @@ const KeyPoint = ({ title, line, icon }: Props) => {
     <section className={styles.container}>
       <div className={styles.icon}>{icon}</div>
       <div className={styles.details}>
-        <h1>{title}</h1>
-        <div className={styles.line}>{line}</div>
+        <h1 className={styles.cardTitle}>{title}</h1>
+        <h2 className={styles.cardLine}>{line}</h2>
       </div>
-      <KP className={styles.blob} />
     </section>
   );
 };
