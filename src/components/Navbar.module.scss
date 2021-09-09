@@ -38,13 +38,17 @@
 
 @media screen and (max-width: 600px) {
   .container {
-    top: unset;
-    bottom: 16px;
+    left: unset;
+    top: 16px;
     right: 16px;
-    margin: 0 auto;
-    padding: 10px 16px;
+    padding: 16px;
+    width: max-content;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
 
     & > a {
+      justify-self: center;
       font-size: 0.8rem;
     }
   }
