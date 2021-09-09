@@ -16,15 +16,25 @@
     font-weight: 600;
     text-decoration: none;
     color: var(--text-light-2);
+    & > svg {
+      display: none;
+      fill: var(--text-light-2);
+    }
 
     &:hover {
       color: var(--text-light-1);
+      & > svg {
+        fill: var(--text-light-1);
+      }
     }
   }
 }
 
 .current {
   color: var(--primary-dark) !important;
+  & > svg {
+    fill: var(--primary-dark) !important;
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -38,6 +48,26 @@
 
 @media screen and (max-width: 600px) {
   .container {
-    display: none;
+    left: unset;
+    top: 16px;
+    right: 16px;
+    padding: 16px;
+    width: max-content;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+
+    & > a {
+      justify-self: center;
+      font-size: 0.8rem;
+
+      & > span {
+        display: none;
+      }
+
+      & > svg {
+        display: block;
+      }
+    }
   }
 }

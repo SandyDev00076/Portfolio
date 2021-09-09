@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { FaceIcon, MapSheetIcon, WorkIcon } from "assets/icons";
 
 import styles from "./Navbar.module.scss";
 
@@ -6,14 +7,17 @@ const links = [
   {
     link: "aboutme",
     name: "About me",
+    icon: <FaceIcon />,
   },
   {
     link: "projects",
     name: "Projects",
+    icon: <WorkIcon />,
   },
   {
     link: "journey",
     name: "Journey",
+    icon: <MapSheetIcon />,
   },
 ];
 
@@ -70,7 +74,8 @@ const Navbar = () => {
           className={currSection === link.link ? styles.current : undefined}
           key={link.link}
         >
-          {link.name}
+          <span>{link.name}</span>
+          {link.icon}
         </a>
       ))}
     </section>
