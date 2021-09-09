@@ -28,6 +28,11 @@ import { ReactComponent as WebIcon } from "./web.svg";
 import { ReactComponent as MapIcon } from "./map.svg";
 import { ReactComponent as CodeIcon } from "./code.svg";
 
+// Navbar Icons
+import { ReactComponent as FaceIcon } from "./face.svg";
+import { ReactComponent as MapSheetIcon } from "./mapsheet.svg";
+import { ReactComponent as WorkIcon } from "./work.svg";
+
 export {
   AngularIcon,
   FigmaIcon,
@@ -47,4 +52,7 @@ export {
   WebIcon,
   MapIcon,
   CodeIcon,
+  FaceIcon,
+  MapSheetIcon,
+  WorkIcon,
 };
