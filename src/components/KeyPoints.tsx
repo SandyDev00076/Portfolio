@@ -29,9 +29,11 @@ const KeyPoints = () => {
       });
     }
     startAnim();
-    setInterval(() => {
+    const interval = setInterval(() => {
       startAnim();
     }, cards.length * CARD_ANIM_DURATION);
+
+    return () => clearInterval(interval);
   }, []);
 
   return (
