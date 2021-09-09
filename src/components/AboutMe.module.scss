@@ -82,6 +82,7 @@
   position: relative;
   display: grid;
   place-items: center;
+  @include popWithDelay(850ms);
 }
 
 .scrollTip {
@@ -89,8 +90,9 @@
   font-weight: 400;
   color: var(--text-light-2);
   font-style: italic;
-  @include popWithDelay(1500ms);
+  @include popWithDelay(1200ms);
   margin-top: 80px;
+  animation: scrollTipAnim infinite alternate-reverse ease-in-out 1s;
 }
 
 .blobBg {
@@ -110,6 +112,15 @@
   }
   to {
     transform: scale(1);
+  }
+}
+
+@keyframes scrollTipAnim {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.5;
   }
 }
 
