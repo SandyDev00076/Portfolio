@@ -38,6 +38,9 @@
 
 @media screen and (max-width: 600px) {
   .container {
-    display: none;
+    top: unset;
+    bottom: 16px;
+    right: 16px;
+    margin: 0 auto;
   }
 }
