@@ -14,16 +14,10 @@ const KeyPoints = () => {
     const cards = Array.from(containerRef.current.children);
     function startAnim() {
       cards.forEach((card, index) => {
-        const cardTitle = card.querySelector("h1");
-        const cardLine = card.querySelector("h2");
         setTimeout(() => {
           card.classList.add(styles.animateSlide);
-          cardTitle?.classList.add(styles.animateCardTitle);
-          cardLine?.classList.add(styles.animateCardLine);
           setTimeout(() => {
             card.classList.remove(styles.animateSlide);
-            cardTitle?.classList.remove(styles.animateCardTitle);
-            cardLine?.classList.remove(styles.animateCardLine);
           }, CARD_ANIM_DURATION);
         }, index * CARD_ANIM_DURATION);
       });
