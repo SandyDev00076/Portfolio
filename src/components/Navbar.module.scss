@@ -50,11 +50,14 @@
 @media screen and (max-width: 600px) {
   .container {
     left: unset;
-    top: unset;
-    right: 16px;
-    bottom: 16px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 32px 0 0 32px;
+    margin: auto 0;
     padding: 16px;
     width: max-content;
+    height: 160px;
     display: grid;
     grid-template-columns: 1fr;
     gap: 24px;
