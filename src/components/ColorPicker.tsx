@@ -17,6 +17,7 @@ const ColorPicker = () => {
           className={`${styles[entry]} ${
             color === entry ? styles.selected : ""
           }`}
+          name={`${entry}-color-btn`}
           onClick={() => setColor(entry)}
         />
       ))}
