@@ -50,12 +50,16 @@
 @media screen and (max-width: 600px) {
   .container {
     left: unset;
-    top: 16px;
-    right: 16px;
+    top: unset;
+    right: 0;
+    bottom: 30vh;
+    border-radius: 32px 0 0 32px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
     padding: 16px;
+    transform: translateX(4px);
     width: max-content;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr;
     gap: 24px;
 
     & > a {
