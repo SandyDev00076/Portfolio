@@ -29,6 +29,31 @@
   transform: translateX(0px);
 }
 
+.options {
+  display: flex;
+  align-items: center;
+}
+
+.links {
+  display: grid;
+  grid-template-columns: repeat(4, 50px);
+  padding-left: 32px;
+  margin-left: 32px;
+  border-left: 2px solid var(--text-light-1);
+
+  & svg {
+    height: 26px;
+    width: auto;
+    opacity: 0.5;
+    transition: opacity 0.2s;
+    fill: var(--text);
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
 @media screen and (max-width: 600px) {
   .content {
     & > h1 {
