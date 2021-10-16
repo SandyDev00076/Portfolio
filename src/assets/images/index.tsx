@@ -7,6 +7,7 @@ import VarianceImg from "./variance.jpg";
 import GoodColorsImg from "./goodcolors.jpg";
 import GlassPassImg from "./glasspass.jpg";
 import ClipboardImg from "./clipboard.jpg";
+import GitLookupImg from "./gitlookup.jpg";
 
 export {
   AimImg,
@@ -18,4 +19,5 @@ export {
   GoodColorsImg,
   GlassPassImg,
   ClipboardImg,
+  GitLookupImg,
 };

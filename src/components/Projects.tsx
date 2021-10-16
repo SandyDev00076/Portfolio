@@ -1,18 +1,25 @@
 import React from "react";
-import { AimBlob, BinderBlob, OrderlyBlob } from "assets/blobs";
-import { AimImg, BinderImg, OrderlyImg } from "assets/images";
+import { AimBlob, BinderBlob, GitLookupBlob, OrderlyBlob } from "assets/blobs";
+import { AimImg, BinderImg, GitLookupImg, OrderlyImg } from "assets/images";
 import { ProjectType } from "types/ProjectType";
 import { createProject } from "utils";
-import { AIM_URL, BINDER_URL, ORDERLY_URL } from "../constants";
+import { AIM_URL, BINDER_URL, GITLOOKUP_URL, ORDERLY_URL } from "../constants";
 import OtherProjects from "./OtherProjects";
 import Project from "./Project";
 import Heading from "./Heading";
 
 import styles from "./Projects.module.scss";
 
-const blobs = [<AimBlob />, <OrderlyBlob />, <BinderBlob />];
+const blobs = [<GitLookupBlob />, <AimBlob />, <OrderlyBlob />, <BinderBlob />];
 
 const projects: ProjectType[] = [
+  createProject(
+    "GitLookup",
+    "Tool to find any GitHub user",
+    "This app lets you find any GitHub user and also shows his/her information as well as all the public repos of the user.",
+    GitLookupImg,
+    GITLOOKUP_URL
+  ),
   createProject(
     "Aim",
     "An idea management tool",
