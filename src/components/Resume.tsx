@@ -3,7 +3,7 @@ import React, { useEffect, useRef } from "react";
 
 import styles from "./Resume.module.scss";
 
-const RESUME_NAME = "SanjeetTiwari_Resume2021";
+const RESUME_NAME = "SanjeetTiwari_Resume";
 
 const Resume = () => {
   const contentRef = useRef<HTMLDivElement>(null);
@@ -32,7 +32,7 @@ const Resume = () => {
     <section className={styles.container}>
       <div className={styles.content} ref={contentRef}>
         <h1>Or, want my resume ?</h1>
-        <a href="SanjeetTiwari-Jan19.pdf" download={RESUME_NAME}>
+        <a href="SanjeetTiwariResume.pdf" download={RESUME_NAME}>
           <Button small>Download</Button>
         </a>
       </div>
