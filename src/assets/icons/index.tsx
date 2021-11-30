@@ -32,6 +32,7 @@ import { ReactComponent as CodeIcon } from "./code.svg";
 import { ReactComponent as FaceIcon } from "./face.svg";
 import { ReactComponent as MapSheetIcon } from "./mapsheet.svg";
 import { ReactComponent as WorkIcon } from "./work.svg";
+import { ReactComponent as ToolsIcon } from "./tools.svg";
 
 export {
   AngularIcon,
@@ -55,4 +56,5 @@ export {
   FaceIcon,
   MapSheetIcon,
   WorkIcon,
+  ToolsIcon,
 };
