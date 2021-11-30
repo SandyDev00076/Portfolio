@@ -1,11 +1,11 @@
-import React, { ReactElement, useEffect, useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import Button from "atoms/Button";
 import { ProjectType } from "types/ProjectType";
 
 import styles from "./Project.module.scss";
 
 interface Props extends ProjectType {
-  blob: ReactElement<any, any>;
+  blob: JSX.Element;
 }
 const Project = ({ title, subtitle, about, imageURL, link, blob }: Props) => {
   const containerRef = useRef<HTMLDivElement>(null);
