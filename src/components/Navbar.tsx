@@ -11,14 +11,14 @@ const links: NavLink[] = [
     icon: <FaceIcon />,
   },
   {
-    link: "tools",
-    name: "Tools",
-    icon: <ToolsIcon />,
-  },
-  {
     link: "projects",
     name: "Projects",
     icon: <WorkIcon />,
+  },
+  {
+    link: "tools",
+    name: "Tools",
+    icon: <ToolsIcon />,
   },
   {
     link: "journey",

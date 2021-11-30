@@ -24,7 +24,7 @@ const gigs: GigType[] = [
 const Journey = () => {
   return (
     <section id="journey">
-      <Heading dir="right">Journey</Heading>
+      <Heading dir="left">Journey</Heading>
       <div className={styles.gigs}>
         {gigs.map((gig, index) => (
           <Gig {...gig} index={gigs.length - index} key={index} />

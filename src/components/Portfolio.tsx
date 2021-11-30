@@ -12,8 +12,8 @@ const Portfolio = () => {
   return (
     <section>
       <AboutMe />
-      <Tools />
       <Projects />
+      <Tools />
       <Journey />
       <Mail />
       <Resume />
