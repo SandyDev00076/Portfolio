@@ -22,6 +22,7 @@
   --primary: hsl(var(--hue-1), 96%, 90%);
   --primary-dark: hsl(var(--hue-1), 97%, 75%);
   --primary-light: hsl(var(--hue-1), 92%, 95%);
+  --primary-lighter: hsl(var(--hue-1), 92%, 99%);
 
   // blobs
   --blob-1: hsl(203, 84%, 90%);
@@ -32,4 +33,5 @@
   --skill-icon: hsl(30, 50%, 99%);
   --white: hsl(0, 0%, 100%);
   --mail-section: hsl(0, 0%, 98%);
+  --confidence: hsl(120, 60%, 94%);
 }

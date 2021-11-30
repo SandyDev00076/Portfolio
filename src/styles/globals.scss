@@ -52,30 +52,35 @@ a {
   --primary: hsl(var(--hue-1), 96%, 90%);
   --primary-dark: hsl(var(--hue-1), 97%, 75%);
   --primary-light: hsl(var(--hue-1), 92%, 95%);
+  --primary-lighter: hsl(var(--hue-1), 92%, 99%);
 }
 
 .blueApp {
   --primary: hsl(var(--hue-2), 96%, 90%);
   --primary-dark: hsl(var(--hue-2), 97%, 75%);
   --primary-light: hsl(var(--hue-2), 92%, 95%);
+  --primary-lighter: hsl(var(--hue-2), 92%, 99%);
 }
 
 .purpleApp {
   --primary: hsl(var(--hue-3), 96%, 90%);
   --primary-dark: hsl(var(--hue-3), 97%, 75%);
   --primary-light: hsl(var(--hue-3), 92%, 95%);
+  --primary-lighter: hsl(var(--hue-3), 92%, 99%);
 }
 
 .greenApp {
   --primary: hsl(var(--hue-4), 96%, 90%);
   --primary-dark: hsl(var(--hue-4), 97%, 75%);
   --primary-light: hsl(var(--hue-4), 92%, 95%);
+  --primary-lighter: hsl(var(--hue-4), 92%, 99%);
 }
 
 .pinkApp {
   --primary: hsl(var(--hue-5), 96%, 90%);
   --primary-dark: hsl(var(--hue-5), 97%, 75%);
   --primary-light: hsl(var(--hue-5), 92%, 95%);
+  --primary-lighter: hsl(var(--hue-5), 92%, 99%);
 }
 
 @media screen and (max-width: 600px) {

@@ -1,0 +1,31 @@
+.wrapper {
+  position: relative;
+  background-color: var(--primary-lighter);
+}
+
+.tech {
+  z-index: 2;
+  position: relative;
+  font-size: 1.2rem;
+  color: var(--text);
+  transition: color 0.3s;
+  height: 80px;
+  display: grid;
+  place-items: center;
+}
+
+.confidenceBg {
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background-color: var(--confidence);
+}
+
+@media screen and (max-width: 600px) {
+  .tech {
+    font-size: 1rem;
+    height: 72px;
+  }
+}

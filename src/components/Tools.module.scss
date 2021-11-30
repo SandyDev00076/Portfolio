@@ -8,17 +8,12 @@
 .type {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 32px;
-  justify-items: center;
+  gap: 8px;
   margin-bottom: 32px;
 }
 
-.tech {
-  font-size: 1.2rem;
-  color: var(--text-light-1);
-  transition: color 0.3s;
-
-  &:hover {
-    color: var(--text);
+@media screen and (max-width: 600px) {
+  .type {
+    grid-template-columns: repeat(2, 1fr);
   }
 }

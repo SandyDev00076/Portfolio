@@ -1,6 +1,7 @@
 import { GigType } from "types/GigType";
 import { OtherProjectType } from "types/OtherProjectType";
 import { ProjectType } from "types/ProjectType";
+import { DomainType, Tool } from "types/Tool";
 
 export function createProject(
   title: string,
@@ -42,4 +43,16 @@ export function createGig(
     duration,
     contri,
   };
+}
+
+export function createTool(
+  name: string,
+  confidence: number,
+  domain: DomainType = "front"
+): Tool {
+  return {
+    name,
+    confidence,
+    domain
+  }
 }
