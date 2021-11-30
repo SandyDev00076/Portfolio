@@ -10,7 +10,7 @@ import Heading from "./Heading";
 
 import styles from "./Projects.module.scss";
 
-const blobs = [<GitLookupBlob />, <AimBlob />, <OrderlyBlob />, <BinderBlob />];
+const blobs = [<GitLookupBlob key="1" />, <AimBlob key="2" />, <OrderlyBlob key="3" />, <BinderBlob key="4" />];
 
 const projects: ProjectType[] = [
   createProject(
