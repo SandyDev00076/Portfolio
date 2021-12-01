@@ -10,7 +10,12 @@ import Heading from "./Heading";
 
 import styles from "./Projects.module.scss";
 
-const blobs = [<GitLookupBlob key="1" />, <AimBlob key="2" />, <OrderlyBlob key="3" />, <BinderBlob key="4" />];
+const blobs = [
+  <GitLookupBlob key="1" />,
+  <AimBlob key="2" />,
+  <OrderlyBlob key="3" />,
+  <BinderBlob key="4" />,
+];
 
 const projects: ProjectType[] = [
   createProject(
@@ -45,7 +50,7 @@ const projects: ProjectType[] = [
 
 const Projects = () => {
   return (
-    <section className={styles.container} id="projects">
+    <section id="projects">
       <Heading>Projects</Heading>
       <div className={styles.projects}>
         {projects.map((project, index) => (

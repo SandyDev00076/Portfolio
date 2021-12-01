@@ -6,12 +6,14 @@ import Mail from "./Mail";
 import Navbar from "./Navbar";
 import Projects from "./Projects";
 import Resume from "./Resume";
+import Tools from "./Tools";
 
 const Portfolio = () => {
   return (
     <section>
       <AboutMe />
       <Projects />
+      <Tools />
       <Journey />
       <Mail />
       <Resume />

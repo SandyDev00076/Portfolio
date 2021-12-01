@@ -1,11 +1,4 @@
-@use '../styles/shared';
-
-.container {
-  & > h1 {
-    @extend %heading;
-    text-align: right;
-  }
-}
+@use "../styles/shared";
 
 .gigs {
   @extend %lane;

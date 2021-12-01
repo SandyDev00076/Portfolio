@@ -8,7 +8,7 @@ import styles from "./Journey.module.scss";
 
 const gigs: GigType[] = [
   createGig(
-    "ECS Infosolutions",
+    "GlobalLogic",
     "Senior Software Developer",
     "Oct 2019 - Present",
     "Worked on several projects where I created UI for various applications that are capable of telephony operations and contact centre reporting."
@@ -23,8 +23,8 @@ const gigs: GigType[] = [
 
 const Journey = () => {
   return (
-    <section className={styles.container} id="journey">
-      <Heading dir="right">Journey</Heading>
+    <section id="journey">
+      <Heading dir="left">Journey</Heading>
       <div className={styles.gigs}>
         {gigs.map((gig, index) => (
           <Gig {...gig} index={gigs.length - index} key={index} />

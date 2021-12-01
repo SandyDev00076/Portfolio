@@ -1,0 +1,53 @@
+.wrapper {
+  position: relative;
+  background-color: var(--primary-lighter);
+
+  &:hover {
+    .info {
+      opacity: 1;
+    }
+  }
+}
+
+.tech {
+  z-index: 2;
+  position: relative;
+  font-size: 1.2rem;
+  color: var(--text);
+  transition: color 0.3s;
+  height: 80px;
+  display: grid;
+  place-items: center;
+}
+
+.confidenceBg {
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background-color: var(--confidence);
+}
+
+.info {
+  opacity: 0;
+  z-index: 2;
+  position: absolute;
+  bottom: 10px;
+  font-size: 0.6rem;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  transition: opacity 0.5s;
+  text-align: center;
+  letter-spacing: 2px;
+  color: var(--text-light-2);
+}
+
+@media screen and (max-width: 600px) {
+  .tech {
+    font-size: 1rem;
+    height: 72px;
+  }
+}

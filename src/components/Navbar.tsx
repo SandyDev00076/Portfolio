@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
-import { FaceIcon, MapSheetIcon, WorkIcon } from "assets/icons";
+import { FaceIcon, MapSheetIcon, ToolsIcon, WorkIcon } from "assets/icons";
+import { NavLink, SectionID } from "types/NavLink";
 
 import styles from "./Navbar.module.scss";
 
-const links = [
+const links: NavLink[] = [
   {
     link: "aboutme",
     name: "About me",
@@ -13,6 +14,11 @@ const links = [
     link: "projects",
     name: "Projects",
     icon: <WorkIcon />,
+  },
+  {
+    link: "tools",
+    name: "Tools",
+    icon: <ToolsIcon />,
   },
   {
     link: "journey",
@@ -28,10 +34,11 @@ const options: IntersectionObserverInit = {
 };
 
 const Navbar = () => {
-  const [currSection, setCurrSection] = useState("");
+  const [currSection, setCurrSection] = useState<SectionID | null>(null);
 
   useEffect(() => {
     const AboutMeSec = document.querySelector("#aboutme");
+    const ToolsSec = document.querySelector("#tools");
     const ProjectsSec = document.querySelector("#projects");
     const JourneySec = document.querySelector("#journey");
 
@@ -42,6 +49,14 @@ const Navbar = () => {
       });
     }, options);
     if (AboutMeSec) aboutMeObserver.observe(AboutMeSec);
+
+    const toolsObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        setCurrSection("tools");
+      });
+    }, options);
+    if (ToolsSec) toolsObserver.observe(ToolsSec);
 
     const projectsObserver = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
@@ -61,6 +76,7 @@ const Navbar = () => {
 
     return () => {
       aboutMeObserver.disconnect();
+      toolsObserver.disconnect();
       projectsObserver.disconnect();
       journeyObserver.disconnect();
     };

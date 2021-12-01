@@ -1,4 +1,4 @@
-@use '../styles/shared' as *;
+@use "../styles/shared" as *;
 
 .container {
   @extend %glassmorph;
@@ -8,7 +8,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 380px;
+  width: 440px;
   position: fixed;
   top: 16px;
   right: 16px;

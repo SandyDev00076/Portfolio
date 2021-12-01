@@ -1,0 +1,19 @@
+@use "../styles/shared";
+
+.tools {
+  @extend %lane;
+  margin-bottom: 96px;
+}
+
+.type {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  margin-bottom: 32px;
+}
+
+@media screen and (max-width: 600px) {
+  .type {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
