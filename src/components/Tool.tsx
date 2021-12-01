@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useRef } from "react";
 import { DomainType, Tool } from "types/Tool";
 
 import styles from "./Tool.module.scss";
@@ -16,7 +16,6 @@ interface Props {
 }
 const ToolTile = ({ tool }: Props) => {
   const confidenceBgRef = useRef<HTMLDivElement>(null);
-  const [infoVisibility, showInfo] = useState(false);
 
   function toggleConfidence(show: boolean) {
     if (!confidenceBgRef.current) return;
