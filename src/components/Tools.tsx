@@ -13,7 +13,7 @@ const tools = [
   createTool("CSS3", 9),
   createTool("Sass", 8),
   createTool("Ionic", 6),
-  createTool("AdobeXD", 8),
+  createTool("AdobeXD", 8, "design"),
   createTool("Redux", 6),
   createTool("NodeJS", 5, "back"),
   createTool("Vue", 5),
