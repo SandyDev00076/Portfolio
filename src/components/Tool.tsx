@@ -1,13 +1,22 @@
-import React, { useRef } from "react";
-import { Tool } from "types/Tool";
+import React, { useRef, useState } from "react";
+import { DomainType, Tool } from "types/Tool";
 
 import styles from "./Tool.module.scss";
+
+const domainTypeToString: {
+  [k in DomainType]: string;
+} = {
+  front: "Frontend",
+  back: "Backend",
+  design: "Design",
+};
 
 interface Props {
   tool: Tool;
 }
 const ToolTile = ({ tool }: Props) => {
   const confidenceBgRef = useRef<HTMLDivElement>(null);
+  const [infoVisibility, showInfo] = useState(false);
 
   function toggleConfidence(show: boolean) {
     if (!confidenceBgRef.current) return;
@@ -37,6 +46,9 @@ const ToolTile = ({ tool }: Props) => {
     >
       <div className={styles.tech}>{tool.name}</div>
       <div className={styles.confidenceBg} ref={confidenceBgRef} />
+      <div className={styles.info}>
+        {domainTypeToString[tool.domain]} · {tool.confidence}/10
+      </div>
     </div>
   );
 };
