@@ -3,7 +3,8 @@
   background-color: var(--primary-lighter);
 
   &:hover {
-    .info {
+    .info,
+    .domain {
       opacity: 1;
     }
   }
@@ -29,11 +30,10 @@
   background-color: var(--confidence);
 }
 
-.info {
+.extraInfo {
   opacity: 0;
   z-index: 2;
   position: absolute;
-  bottom: 10px;
   font-size: 0.6rem;
   left: 0;
   right: 0;
@@ -43,6 +43,16 @@
   text-align: center;
   letter-spacing: 2px;
   color: var(--text-light-2);
+}
+
+.info {
+  @extend .extraInfo;
+  bottom: 10px;
+}
+
+.domain {
+  @extend .extraInfo;
+  top: 10px;
 }
 
 @media screen and (max-width: 600px) {

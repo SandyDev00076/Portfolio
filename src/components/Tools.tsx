@@ -6,21 +6,21 @@ import ToolTile from "./Tool";
 import styles from "./Tools.module.scss";
 
 const tools = [
-  createTool("React", 9),
-  createTool("TypeScript", 8),
-  createTool("Figma", 9, "design"),
-  createTool("Angular", 7),
-  createTool("CSS3", 9),
-  createTool("Sass", 8),
-  createTool("Ionic", 6),
-  createTool("AdobeXD", 8, "design"),
-  createTool("Redux", 6),
-  createTool("NodeJS", 5, "back"),
-  createTool("Vue", 5),
-  createTool("ExpressJS", 5, "back"),
-  createTool("AWS Lambda", 4, "back"),
-  createTool("Cordova", 5),
-  createTool("Flask", 3, "back"),
+  createTool("React", 9, "proficient"),
+  createTool("TypeScript", 8, "proficient"),
+  createTool("Figma", 9, "proficient", "design"),
+  createTool("Angular", 7, "intermediate"),
+  createTool("CSS3", 9, "proficient"),
+  createTool("Sass", 8, "intermediate"),
+  createTool("Ionic", 6, "intermediate"),
+  createTool("AdobeXD", 8, "intermediate", "design"),
+  createTool("Redux", 6, "beginner"),
+  createTool("NodeJS", 5, "intermediate", "back"),
+  createTool("Vue", 5, "beginner"),
+  createTool("ExpressJS", 5, "beginner", "back"),
+  createTool("AWS Lambda", 4, "beginner", "back"),
+  createTool("Cordova", 5, "beginner"),
+  createTool("Flask", 3, "beginner", "back"),
 ];
 
 const Tools = () => {
