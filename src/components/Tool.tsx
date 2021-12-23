@@ -46,9 +46,9 @@ const ToolTile = ({ tool }: Props) => {
       <div className={styles.tech}>{tool.name}</div>
       <div className={styles.confidenceBg} ref={confidenceBgRef} />
       <div className={styles.info}>
-        {domainTypeToString[tool.domain]} ·{" "}
         <strong>{tool.confidenceLevel.toLocaleUpperCase()}</strong>
       </div>
+      <div className={styles.domain}>{domainTypeToString[tool.domain]}</div>
     </div>
   );
 };
