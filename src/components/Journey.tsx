@@ -8,7 +8,7 @@ import styles from "./Journey.module.scss";
 
 const gigs: GigType[] = [
   createGig(
-    "GlobalLogic",
+    "ECS Infosolutions",
     "Senior Software Developer",
     "Oct 2019 - Present",
     "Worked on several projects where I created UI for various applications that are capable of telephony operations and contact centre reporting."
