@@ -8,9 +8,15 @@ import styles from "./Journey.module.scss";
 
 const gigs: GigType[] = [
   createGig(
-    "ECS Infosolutions",
+    "PayU (via Recro)",
     "Senior Software Developer",
-    "Oct 2019 - Present",
+    "Apr 2022 - Present",
+    "Worked on difference making POCs such as source maps for production, OTP Auto Read functionality and many more. Worked on various UI screen as well."
+  ),
+  createGig(
+    "GlobalLogic UK&I",
+    "Senior Software Developer",
+    "Oct 2019 - Mar 2022",
     "Worked on several projects where I created UI for various applications that are capable of telephony operations and contact centre reporting."
   ),
   createGig(
